@@ -6,7 +6,7 @@ import type {
   ClientGameState,
   Player,
   Room,
-  ServerMessage,
+  CAHServerMessage,
   WhiteCard,
 } from '../../shared/types/cah'
 import { GamePhase } from '../../shared/types/cah'
@@ -57,7 +57,7 @@ export function useCAHGame(roomId: Ref<string> | string) {
   // ── Message processing ───────────────────────────────────────────────────
   watch(lastMessage, (msg) => { if (msg) handleMessage(msg) })
 
-  function handleMessage(msg: ServerMessage) {
+  function handleMessage(msg: CAHServerMessage) {
     switch (msg.type) {
 
       case 'WELCOME':
@@ -173,9 +173,9 @@ export function useCAHGame(roomId: Ref<string> | string) {
     send({ type: 'REVEAL_SUBMISSION', index })
   }
 
-  function pickWinner(winnerId: string) {
+  function pickWinner(index: number) {
     if (!canJudge.value) return
-    send({ type: 'PICK_WINNER', winnerId })
+    send({ type: 'PICK_WINNER', index })
   }
 
   return {

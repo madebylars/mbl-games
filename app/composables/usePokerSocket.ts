@@ -1,43 +1,40 @@
 /**
- * Manages the raw WebSocket connection to the CAH server.
+ * Manages the raw WebSocket connection to the Poker server.
  * Handles connect, reconnect (up to 3 attempts), keepalive PING, and clean teardown.
  */
-import type { CAHCAHClientMessage, CAHCAHServerMessage } from "../../shared/types/cah"
+import type { PokerPokerClientMessage, PokerPokerServerMessage } from "../../shared/types/poker"
 
 function genId(): string {
   return crypto.randomUUID().replace(/-/g, '').slice(0, 16)
 }
 
-export function useCAHSocket(
+export function usePokerSocket(
   roomId: Ref<string> | string,
   playerName: Ref<string> | string,
 ) {
-  // ── Stable player ID persisted in localStorage ─────────────────────────────
   const playerId = ref('')
 
   onMounted(() => {
-    let id = localStorage.getItem('cah-player-id')
-    if (!id) { id = genId(); localStorage.setItem('cah-player-id', id) }
+    let id = localStorage.getItem('poker-player-id')
+    if (!id) { id = genId(); localStorage.setItem('poker-player-id', id) }
     playerId.value = id
   })
 
-  // ── Reactive state ─────────────────────────────────────────────────────────
-  const status = ref<'connecting' | 'connected' | 'disconnected' | 'error'>('disconnected')
-  const lastMessage = ref<CAHServerMessage | null>(null)
+  const status      = ref<'connecting' | 'connected' | 'disconnected' | 'error'>('disconnected')
+  const lastMessage = ref<PokerServerMessage | null>(null)
 
-  // ── Internals ──────────────────────────────────────────────────────────────
-  let ws: WebSocket | null = null
-  let pingTimer: ReturnType<typeof setInterval> | null = null
-  let reconnectTimer: ReturnType<typeof setTimeout> | null = null
+  let ws:             WebSocket | null = null
+  let pingTimer:      ReturnType<typeof setInterval> | null = null
+  let reconnectTimer: ReturnType<typeof setTimeout>  | null = null
   let attempts = 0
-  let closing = false    // true when the composable is intentionally tearing down
+  let closing  = false
 
   function buildUrl(): string {
     const rid  = toValue(roomId)
     const name = encodeURIComponent((toValue(playerName) || 'Player').slice(0, 32))
     const pid  = playerId.value
     const proto = location.protocol === 'https:' ? 'wss:' : 'ws:'
-    return `${proto}//${location.host}/games/cah/ws?roomId=${rid}&playerId=${pid}&name=${name}`
+    return `${proto}//${location.host}/games/poker/ws?roomId=${rid}&playerId=${pid}&name=${name}`
   }
 
   function connect() {
@@ -54,9 +51,8 @@ export function useCAHSocket(
     }
 
     ws.onmessage = (ev) => {
-      try {
-        lastMessage.value = JSON.parse(ev.data as string) as CAHServerMessage
-      } catch { /* ignore malformed frames */ }
+      try { lastMessage.value = JSON.parse(ev.data as string) as PokerServerMessage }
+      catch { /* ignore malformed frames */ }
     }
 
     ws.onclose = () => {
@@ -65,9 +61,7 @@ export function useCAHSocket(
       if (!closing) scheduleReconnect()
     }
 
-    ws.onerror = () => {
-      status.value = 'error'
-    }
+    ws.onerror = () => { status.value = 'error' }
   }
 
   function scheduleReconnect() {
@@ -77,10 +71,8 @@ export function useCAHSocket(
     reconnectTimer = setTimeout(connect, delay)
   }
 
-  function send(msg: CAHClientMessage) {
-    if (ws?.readyState === WebSocket.OPEN) {
-      ws.send(JSON.stringify(msg))
-    }
+  function send(msg: PokerClientMessage) {
+    if (ws?.readyState === WebSocket.OPEN) ws.send(JSON.stringify(msg))
   }
 
   function clearPing() {
@@ -96,7 +88,6 @@ export function useCAHSocket(
     status.value = 'disconnected'
   }
 
-  // Connect once the player ID is ready
   watch(playerId, (id) => { if (id) connect() }, { once: true })
 
   onUnmounted(() => {

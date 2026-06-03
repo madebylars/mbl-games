@@ -85,7 +85,7 @@
 </template>
 
 <script setup lang="ts">
-import type { PublicRoomSummary } from '../../../../shared/types/cah'
+import type { PublicRoomSummary } from '../../../../shared/types/core'
 
 // ── Language ───────────────────────────────────────────────────────────────────
 const lang = ref<'en' | 'sv'>('en')

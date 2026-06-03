@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import type { PublicRoomSummary } from '../../../shared/types/cah'
+import type { PublicRoomSummary } from '../../../shared/types/core'
 
 defineProps<{
   rooms: PublicRoomSummary[]

@@ -4,9 +4,9 @@
  * Endpoint: ws(s)://host/games/cah/ws?roomId=XXXXXX&playerId=...&name=...
  */
 import { customAlphabet } from 'nanoid'
-import type { ClientMessage, WhiteCard } from '../../../../shared/types/cah'
+import type { CAHClientMessage, WhiteCard } from '../../../../shared/types/cah'
 import { GamePhase as Phase } from '../../../../shared/types/cah'
-import type { RoomState } from '../../../utils/cahRoomStore'
+import type { RoomState } from '../../../games/cah/roomStore'
 import {
   addPlayer,
   allNonCzarSubmitted,
@@ -26,7 +26,7 @@ import {
   setTimer,
   startNewRound,
   unicast,
-} from '../../../utils/cahRoomStore'
+} from '../../../games/cah/roomStore'
 
 const genPlayerId = customAlphabet('abcdefghijklmnopqrstuvwxyz0123456789', 16)
 
@@ -116,9 +116,9 @@ export default defineWebSocketHandler({
     const state = getRoom(roomId)
     if (!state) return
 
-    let parsed: ClientMessage
+    let parsed: CAHClientMessage
     try {
-      parsed = JSON.parse(msg.text()) as ClientMessage
+      parsed = JSON.parse(msg.text()) as CAHClientMessage
     } catch {
       return
     }
@@ -137,7 +137,7 @@ export default defineWebSocketHandler({
         handleRevealSubmission(state, playerId, parsed.index)
         break
       case 'PICK_WINNER':
-        handlePickWinner(state, playerId, parsed.winnerId)
+        handlePickWinner(state, playerId, parsed.index)
         break
       case 'NEXT_ROUND':
         handleNextRound(state, playerId)
@@ -221,9 +221,9 @@ function startAnswering(state: RoomState) {
   broadcast(state, { type: 'PHASE_CHANGED', phase: Phase.ANSWERING })
 
   // Optional countdown timer
-  const { answerTimerSeconds } = state.room.config
-  if (answerTimerSeconds > 0) {
-    let secondsLeft = answerTimerSeconds
+  const { turnTimerSeconds } = state.room.config
+  if (turnTimerSeconds > 0) {
+    let secondsLeft = turnTimerSeconds
     setInterval_(state, 'answerTimer', () => {
       secondsLeft--
       broadcast(state, { type: 'TIMER_TICK', secondsLeft })
@@ -334,14 +334,15 @@ function handleRevealSubmission(state: RoomState, playerId: string, index: numbe
   broadcast(state, { type: 'SUBMISSION_REVEALED', index, cards })
 }
 
-function handlePickWinner(state: RoomState, playerId: string, winnerId: string) {
+function handlePickWinner(state: RoomState, playerId: string, index: number) {
   if (state.room.phase !== Phase.JUDGING) return
   const { currentRound } = state.room
   if (!currentRound) return
   if (currentRound.czarId !== playerId) return
 
-  const winningSubmission = currentRound.submissions.find((s) => s.playerId === winnerId)
+  const winningSubmission = currentRound.submissions[index]
   if (!winningSubmission) return
+  const winnerId = winningSubmission.playerId
 
   clearAllTimers(state)
 
@@ -527,7 +528,7 @@ function scheduleBotJudge(state: RoomState) {
     const czar = s.room.players.find((p) => p.isCzar)
     const round = s.room.currentRound
     if (!czar || !round || round.submissions.length === 0) return
-    const winner = round.submissions[Math.floor(Math.random() * round.submissions.length)]!
-    handlePickWinner(s, czar.id, winner.playerId)
+    const winnerIndex = Math.floor(Math.random() * round.submissions.length)
+    handlePickWinner(s, czar.id, winnerIndex)
   }, delay + 2_000)
 }

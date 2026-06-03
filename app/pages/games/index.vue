@@ -66,6 +66,12 @@ const games = [
     description: '', // overridden by cahContent
   },
   {
+    slug: 'poker',
+    name: 'Texas Hold\'em',
+    icon: '♠️',
+    description: 'Real multiplayer Texas Hold\'em poker — play against friends or bots with private/public tables, blinds, all-ins and full hand evaluation.',
+  },
+  {
     slug: 'snake',
     name: 'Snake',
     icon: '🐍',

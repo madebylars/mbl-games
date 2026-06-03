@@ -57,7 +57,7 @@
         <button
           v-if="canJudge && sub.revealed && !winnerId && allRevealed"
           class="pick-btn"
-          @click.stop="$emit('pickWinner', sub.playerId)"
+          @click.stop="$emit('pickWinner', index)"
         >
           {{ t.pick }}
         </button>
@@ -102,7 +102,7 @@ const t = computed(() => STRINGS[props.lang ?? 'en'])
 
 const emit = defineEmits<{
   reveal: [index: number]
-  pickWinner: [playerId: string]
+  pickWinner: [index: number]
 }>()
 
 const allRevealed = computed(() =>

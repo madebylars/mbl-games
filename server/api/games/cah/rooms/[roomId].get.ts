@@ -1,5 +1,5 @@
 import { createError, getRouterParam } from 'h3'
-import { getRoom } from '../../../../utils/cahRoomStore'
+import { getRoom } from '../../../../games/cah/roomStore'
 
 // GET /api/games/cah/rooms/:roomId — single room info (used before joining to detect full/in-progress)
 export default defineEventHandler((event) => {

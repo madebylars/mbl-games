@@ -1,3 +1,5 @@
+import type { BasePlayer, BaseRoom, BaseRoomConfig, CoreServerMessage } from './core'
+
 // ── Game phases ────────────────────────────────────────────────────────────────
 
 export enum GamePhase {
@@ -26,14 +28,9 @@ export interface WhiteCard {
 
 // ── Players ────────────────────────────────────────────────────────────────────
 
-export interface Player {
-  id: string         // nanoid — stable across reconnects (stored client-side)
-  name: string
+export interface Player extends BasePlayer {
   score: number
-  isHost: boolean
   isCzar: boolean
-  isBot: boolean
-  connected: boolean // false when WS drops but grace period is active
 }
 
 // ── Round ──────────────────────────────────────────────────────────────────────
@@ -54,25 +51,14 @@ export interface Round {
 
 // ── Room ───────────────────────────────────────────────────────────────────────
 
-export interface RoomConfig {
-  name: string
-  maxPlayers: number          // default 10
-  isPublic: boolean
+export interface RoomConfig extends BaseRoomConfig {
   pointsToWin: number         // default 8 (Awesome Points)
   handSize: number            // default 10
   packs: string[]             // e.g. ["base"]
-  answerTimerSeconds: number  // 0 = no timer
-  bots: number                // 0 = no bots (demo mode uses 2–4)
 }
 
-export interface Room {
-  id: string
-  config: RoomConfig
-  phase: GamePhase
-  players: Player[]
+export interface Room extends BaseRoom<Player, RoomConfig, GamePhase> {
   currentRound: Round | null
-  createdAt: number
-  lastActivityAt: number
 }
 
 // ── What the server sends each individual client ───────────────────────────────
@@ -85,15 +71,7 @@ export interface ClientGameState {
 
 // ── REST responses ─────────────────────────────────────────────────────────────
 
-export interface PublicRoomSummary {
-  id: string
-  name: string
-  playerCount: number
-  maxPlayers: number
-  phase: GamePhase
-}
-
-export interface CreateRoomBody {
+export interface CAHCreateRoomBody {
   playerName: string
   config: Partial<RoomConfig>
   bots?: number
@@ -101,12 +79,12 @@ export interface CreateRoomBody {
 
 // ── WebSocket messages: Client → Server ───────────────────────────────────────
 
-export type ClientMessage =
+export type CAHClientMessage =
   | { type: 'JOIN_ROOM';          roomId: string; playerId: string; playerName: string }
   | { type: 'START_GAME' }
   | { type: 'PLAY_CARDS';         cardIds: string[] }
   | { type: 'REVEAL_SUBMISSION';  index: number }
-  | { type: 'PICK_WINNER';        winnerId: string }
+  | { type: 'PICK_WINNER';        index: number }
   | { type: 'NEXT_ROUND' }
   | { type: 'KICK_PLAYER';        targetId: string }
   | { type: 'LEAVE_ROOM' }
@@ -114,18 +92,13 @@ export type ClientMessage =
 
 // ── WebSocket messages: Server → Client ───────────────────────────────────────
 
-export type ServerMessage =
-  | { type: 'WELCOME';               playerId: string; roomId: string }
+type CAHGameMessage =
   | { type: 'STATE_UPDATE';          state: ClientGameState }
-  | { type: 'PLAYER_JOINED';         player: Player }
-  | { type: 'PLAYER_LEFT';           playerId: string }
-  | { type: 'PLAYER_DISCONNECTED';   playerId: string }
   | { type: 'PHASE_CHANGED';         phase: GamePhase; round?: Round }
   | { type: 'CARDS_PLAYED';          playerId: string; count: number }
   | { type: 'SUBMISSION_REVEALED';   index: number; cards: WhiteCard[] }
   | { type: 'ROUND_WINNER';          winnerId: string; cards: WhiteCard[] }
   | { type: 'SCORES_UPDATE';         players: Player[] }
   | { type: 'GAME_OVER';             winner: Player; scores: Player[] }
-  | { type: 'TIMER_TICK';            secondsLeft: number }
-  | { type: 'ERROR';                 code: string; message: string }
-  | { type: 'PONG' }
+
+export type CAHServerMessage = CoreServerMessage | CAHGameMessage
