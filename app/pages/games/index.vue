@@ -12,16 +12,28 @@
           <div v-if="game.slug === 'cah'" class="lang-toggle" @click.stop.prevent>
             <button
               class="lang-btn"
-              :class="{ active: cahLang === 'en' }"
+              :class="{ active: cahPack === 'en' }"
               title="English"
-              @click.stop.prevent="setCahLang('en')"
+              @click.stop.prevent="setCahPack('en')"
             >🇬🇧</button>
             <button
               class="lang-btn"
-              :class="{ active: cahLang === 'sv' }"
+              :class="{ active: cahPack === 'sv' }"
               title="Svenska"
-              @click.stop.prevent="setCahLang('sv')"
+              @click.stop.prevent="setCahPack('sv')"
             >🇸🇪</button>
+            <button
+              class="lang-btn"
+              :class="{ active: cahPack === 'sv-xl' }"
+              title="Svenska XL"
+              @click.stop.prevent="setCahPack('sv-xl')"
+            >🇸🇪<span class="pack-badge">XL</span></button>
+            <button
+              class="lang-btn"
+              :class="{ active: cahPack === 'sv-all' }"
+              title="Svenska + XL"
+              @click.stop.prevent="setCahPack('sv-all')"
+            >🇸🇪<span class="pack-badge">∞</span></button>
           </div>
         </div>
         <h2 class="card-title">{{ game.slug === 'cah' ? cahContent.name : game.name }}</h2>
@@ -33,13 +45,14 @@
 </template>
 
 <script setup lang="ts">
-// ── CAH language toggle ────────────────────────────────────────────────────────
-const cahLang = ref<'en' | 'sv'>('en')
+// ── CAH pack toggle ────────────────────────────────────────────────────────────
+type CahPack = 'en' | 'sv' | 'sv-xl' | 'sv-all'
+const cahPack = ref<CahPack>('sv-all')
 onMounted(() => {
-  cahLang.value = (localStorage.getItem('cah-lang') as 'en' | 'sv') ?? 'en'
+  cahPack.value = (localStorage.getItem('cah-pack') as CahPack) ?? 'sv-all'
 })
 
-const CAH_CONTENT = {
+const CAH_CONTENT: Record<CahPack, { name: string; desc: string }> = {
   en: {
     name: 'Appropriately Disgusting',
     desc: 'Unfiltered. Unapologetic. Unforgettable. Create or join a room and fill in the blanks — the most wrong answer wins.',
@@ -48,13 +61,21 @@ const CAH_CONTENT = {
     name: 'Lagom Äckligt',
     desc: 'Ofiltrerat. Oursäktat. Oförglömligt. Skapa eller gå med i ett rum och fyll i luckorna — det mest fel svar vinner.',
   },
+  'sv-xl': {
+    name: 'Lagom Äckligt XL',
+    desc: 'Det stora svenska kortpaketet. Ofiltrerat. Oursäktat. Oförglömligt.',
+  },
+  'sv-all': {
+    name: 'Lagom Äckligt – Allt',
+    desc: 'Alla svenska kort samlade. Ofiltrerat. Oursäktat. Oförglömligt.',
+  },
 }
 
-const cahContent = computed(() => CAH_CONTENT[cahLang.value])
+const cahContent = computed(() => CAH_CONTENT[cahPack.value])
 
-function setCahLang(lang: 'en' | 'sv') {
-  cahLang.value = lang
-  localStorage.setItem('cah-lang', lang)
+function setCahPack(pack: CahPack) {
+  cahPack.value = pack
+  localStorage.setItem('cah-pack', pack)
 }
 
 // ── Game list ──────────────────────────────────────────────────────────────────
@@ -262,5 +283,13 @@ const games = [
 .lang-btn.active {
   opacity: 1;
   border-color: #818cf8;
+}
+
+.pack-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  vertical-align: super;
+  margin-left: 1px;
+  color: #818cf8;
 }
 </style>

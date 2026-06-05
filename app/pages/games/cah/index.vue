@@ -87,11 +87,19 @@
 <script setup lang="ts">
 import type { PublicRoomSummary } from '../../../../shared/types/core'
 
-// ── Language ───────────────────────────────────────────────────────────────────
-const lang = ref<'en' | 'sv'>('en')
+// ── Language / pack ────────────────────────────────────────────────────────────
+type CahPack = 'en' | 'sv' | 'sv-xl' | 'sv-all'
+const cahPack = ref<CahPack>('sv-all')
 onMounted(() => {
-  lang.value = (localStorage.getItem('cah-lang') as 'en' | 'sv') ?? 'en'
+  cahPack.value = (localStorage.getItem('cah-pack') as CahPack) ?? 'sv-all'
 })
+const lang = computed<'en' | 'sv'>(() => cahPack.value === 'en' ? 'en' : 'sv')
+const packsForKey: Record<CahPack, string[]> = {
+  'en': ['base'],
+  'sv': ['swedish'],
+  'sv-xl': ['swedish-xl'],
+  'sv-all': ['swedish', 'swedish-xl'],
+}
 
 const STRINGS = {
   en: {
@@ -183,7 +191,7 @@ async function createDemo() {
           isPublic: false,
           pointsToWin: 5,
           maxPlayers: 5,
-          packs: lang.value === 'sv' ? ['swedish'] : ['base'],
+          packs: packsForKey[cahPack.value],
         },
         bots: 3,
       },
