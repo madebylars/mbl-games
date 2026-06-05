@@ -78,6 +78,27 @@
           </div>
         </div>
 
+        <div v-if="form.lang === 'en'" class="field">
+          <label class="label">English pack</label>
+          <div class="toggle-row">
+            <button
+              class="toggle-btn"
+              :class="{ active: form.enPack === 'en' }"
+              @click="form.enPack = 'en'"
+            >🇬🇧 Standard</button>
+            <button
+              class="toggle-btn"
+              :class="{ active: form.enPack === 'en-xl' }"
+              @click="form.enPack = 'en-xl'"
+            >🇬🇧<sup class="sv-badge">XL</sup> XL</button>
+            <button
+              class="toggle-btn"
+              :class="{ active: form.enPack === 'en-all' }"
+              @click="form.enPack = 'en-all'"
+            >🇬🇧<sup class="sv-badge">∞</sup> All</button>
+          </div>
+        </div>
+
         <div v-if="form.lang === 'sv'" class="field">
           <label class="label">Swedish pack</label>
           <div class="toggle-row">
@@ -95,7 +116,7 @@
               class="toggle-btn"
               :class="{ active: form.svPack === 'sv-all' }"
               @click="form.svPack = 'sv-all'"
-            >🇸🇪<sup class="sv-badge">∞</sup> Alla</button>
+            >🇸🇈<sup class="sv-badge">∞</sup> Alla</button>
           </div>
         </div>
 
@@ -120,6 +141,7 @@ const emit = defineEmits<{
   created: [roomId: string]
 }>()
 
+type EnPack = 'en' | 'en-xl' | 'en-all'
 type SvPack = 'sv' | 'sv-xl' | 'sv-all'
 
 const form = reactive({
@@ -128,16 +150,22 @@ const form = reactive({
   pointsToWin: 8,
   maxPlayers: 10,
   lang: 'sv' as 'en' | 'sv',
+  enPack: 'en-all' as EnPack,
   svPack: 'sv-all' as SvPack,
 })
 
 onMounted(() => {
   form.lang = (localStorage.getItem('cah-lang') as 'en' | 'sv') ?? 'sv'
+  form.enPack = (localStorage.getItem('cah-en-pack') as EnPack) ?? 'en-all'
   form.svPack = (localStorage.getItem('cah-sv-pack') as SvPack) ?? 'sv-all'
 })
 
 const activePacks = computed(() => {
-  if (form.lang === 'en') return ['base']
+  if (form.lang === 'en') {
+    if (form.enPack === 'en') return ['base']
+    if (form.enPack === 'en-xl') return ['english-xl']
+    return ['base', 'english-xl']
+  }
   if (form.svPack === 'sv') return ['swedish']
   if (form.svPack === 'sv-xl') return ['swedish-xl']
   return ['swedish', 'swedish-xl']
@@ -153,6 +181,7 @@ async function submit() {
 
   try {
     localStorage.setItem('cah-lang', form.lang)
+    localStorage.setItem('cah-en-pack', form.enPack)
     localStorage.setItem('cah-sv-pack', form.svPack)
     const data = await $fetch<{ roomId: string }>('/api/games/cah/rooms', {
       method: 'POST',

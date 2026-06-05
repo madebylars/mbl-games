@@ -8,6 +8,7 @@ import type { BlackCard, WhiteCard } from '../../shared/types/cah'
 // include them. Add new packs here when you create more JSON files.
 
 import basePack from '../../public/cards/cah-base.json'
+import englishXlPack from '../../public/cards/cah-english-xl.json'
 import swedishPack from '../../public/cards/cah-swedish.json'
 import swedishXlPack from '../../public/cards/cah-swedish-xl.json'
 
@@ -20,6 +21,7 @@ interface CardPack {
 // Registry: packName → raw JSON data (static, bundled at build time)
 const PACK_REGISTRY: Record<string, CardPack> = {
   base: basePack as CardPack,
+  'english-xl': englishXlPack as CardPack,
   swedish: swedishPack as CardPack,
   'swedish-xl': swedishXlPack as CardPack,
 }

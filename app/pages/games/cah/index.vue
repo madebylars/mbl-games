@@ -40,6 +40,27 @@
         <button class="change-name" @click="nameConfirmed = false">{{ t.change }}</button>
       </div>
 
+      <div v-if="lang === 'en'" class="sv-pack-row">
+        <button
+          class="sv-pack-btn"
+          :class="{ active: enPack === 'en' }"
+          title="English (standard)"
+          @click="setEnPack('en')"
+        >🇬🇧</button>
+        <button
+          class="sv-pack-btn"
+          :class="{ active: enPack === 'en-xl' }"
+          title="English XL"
+          @click="setEnPack('en-xl')"
+        >🇬🇧<sup class="sv-badge">XL</sup></button>
+        <button
+          class="sv-pack-btn"
+          :class="{ active: enPack === 'en-all' }"
+          title="English + XL"
+          @click="setEnPack('en-all')"
+        >🇬🇧<sup class="sv-badge">∞</sup></button>
+      </div>
+
       <div v-if="lang === 'sv'" class="sv-pack-row">
         <button
           class="sv-pack-btn"
@@ -109,19 +130,30 @@
 import type { PublicRoomSummary } from '../../../../shared/types/core'
 
 // ── Language / pack ────────────────────────────────────────────────────────────
+type EnPack = 'en' | 'en-xl' | 'en-all'
 type SvPack = 'sv' | 'sv-xl' | 'sv-all'
 const lang = ref<'en' | 'sv'>('sv')
+const enPack = ref<EnPack>('en-all')
 const svPack = ref<SvPack>('sv-all')
 onMounted(() => {
   lang.value = (localStorage.getItem('cah-lang') as 'en' | 'sv') ?? 'sv'
+  enPack.value = (localStorage.getItem('cah-en-pack') as EnPack) ?? 'en-all'
   svPack.value = (localStorage.getItem('cah-sv-pack') as SvPack) ?? 'sv-all'
 })
+function setEnPack(p: EnPack) {
+  enPack.value = p
+  localStorage.setItem('cah-en-pack', p)
+}
 function setSvPack(p: SvPack) {
   svPack.value = p
   localStorage.setItem('cah-sv-pack', p)
 }
 const activePacks = computed(() => {
-  if (lang.value === 'en') return ['base']
+  if (lang.value === 'en') {
+    if (enPack.value === 'en') return ['base']
+    if (enPack.value === 'en-xl') return ['english-xl']
+    return ['base', 'english-xl']
+  }
   if (svPack.value === 'sv') return ['swedish']
   if (svPack.value === 'sv-xl') return ['swedish-xl']
   return ['swedish', 'swedish-xl']

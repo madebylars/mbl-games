@@ -1,0 +1,432 @@
+{
+  "pack": "english-xl",
+  "black": [
+    {
+      "id": "spxa801034wq",
+      "text": "Scientists have confirmed that _ is now the leading cause of erectile dysfunction.",
+      "pick": 1
+    },
+    {
+      "id": "cfxrojzqj41g",
+      "text": "The government has announced a new tax on _. Brits are furious.",
+      "pick": 1
+    },
+    {
+      "id": "06i0d5xt6i9j",
+      "text": "On his deathbed, he whispered: \"_\".",
+      "pick": 1
+    },
+    {
+      "id": "9lzwmb1rimwk",
+      "text": "New IKEA product: _. Assembly requires two people and no dignity.",
+      "pick": 1
+    },
+    {
+      "id": "ptunm4vh3u5j",
+      "text": "_ is now available on the NHS. The waiting list is 4 years.",
+      "pick": 1
+    },
+    {
+      "id": "mbvazegbdzw0",
+      "text": "Breaking news: _ found in the Prime Minister's bathroom.",
+      "pick": 1
+    },
+    {
+      "id": "5vl3sge4rdos",
+      "text": "My therapist told me to let go of _. I'm suing her.",
+      "pick": 1
+    },
+    {
+      "id": "vye3a2arhdw2",
+      "text": "The Nobel Peace Prize this year went to the inventor of _.",
+      "pick": 1
+    },
+    {
+      "id": "hetvuda9hy70",
+      "text": "Pornhub's most searched term in the UK in 2025: _.",
+      "pick": 1
+    },
+    {
+      "id": "c9qi48anvk2l",
+      "text": "According to new research, _ is more addictive than cocaine.",
+      "pick": 1
+    },
+    {
+      "id": "ld26ipvlvsnq",
+      "text": "The Ofsted inspector's report described the school's approach to _ as \"outstanding\".",
+      "pick": 1
+    },
+    {
+      "id": "vhd6noj4enur",
+      "text": "Studies show that 9 out of 10 politicians have secretly experimented with _.",
+      "pick": 1
+    },
+    {
+      "id": "acbpvndj2wdk",
+      "text": "Amazon's new Alexa feature will now remind you daily to do _.",
+      "pick": 1
+    },
+    {
+      "id": "st6giq0mjfda",
+      "text": "The safe word was _. Nobody used it.",
+      "pick": 1
+    },
+    {
+      "id": "eqw6pmzc5hwe",
+      "text": "According to WikiLeaks, the CIA has been covertly funding _ since 1987.",
+      "pick": 1
+    },
+    {
+      "id": "0akz3dl4ozul",
+      "text": "What did they find in the cabinet minister's briefcase? _.",
+      "pick": 1
+    },
+    {
+      "id": "mqfp61s8hmon",
+      "text": "The autopsy revealed an unexpected quantity of _.",
+      "pick": 1
+    },
+    {
+      "id": "mvnmuvbzc3e3",
+      "text": "Apple's new product: _. Starting at £1,299.",
+      "pick": 1
+    },
+    {
+      "id": "p9o134vutab3",
+      "text": "The thing nobody mentions at Christmas dinner: _.",
+      "pick": 1
+    },
+    {
+      "id": "4wf0opbggdqe",
+      "text": "What's the only thing holding Western democracy together right now? _.",
+      "pick": 1
+    },
+    {
+      "id": "dr8pgmcri493",
+      "text": "The job interview took a turn when the candidate mentioned _ and _.",
+      "pick": 2
+    },
+    {
+      "id": "5y6lxdp31180",
+      "text": "_ and _ walk into a bar. The barman calls the police about _.",
+      "pick": 3
+    },
+    {
+      "id": "0uo7ej6m6bl9",
+      "text": "The sex tape featured _, _, and a disappointing amount of _.",
+      "pick": 3
+    },
+    {
+      "id": "jo9z2owx01x7",
+      "text": "According to the leaked documents, the affair involved _ and _. The _ has since resigned.",
+      "pick": 3
+    },
+    {
+      "id": "j0bx8kpky11j",
+      "text": "_ is the new _. At least that's what my _ keeps telling me.",
+      "pick": 3
+    }
+  ],
+  "white": [
+    {
+      "id": "95kp536tmy7c",
+      "text": "A Tinder date who smells like regret and Lynx Africa."
+    },
+    {
+      "id": "amrs13nujf45",
+      "text": "Boris Johnson's pubic hair."
+    },
+    {
+      "id": "1n83u0jdv8ve",
+      "text": "An erection at a funeral."
+    },
+    {
+      "id": "qaw779q6y5jq",
+      "text": "The Pornhub category that shall not be named."
+    },
+    {
+      "id": "6evy707czc51",
+      "text": "A priest with a surprisingly detailed knowledge of bondage."
+    },
+    {
+      "id": "n9qvap1alg91",
+      "text": "Accidentally texting your mum instead of your dealer."
+    },
+    {
+      "id": "fez6u61rx4kp",
+      "text": "A LinkedIn post about a threesome framed as \"professional growth\"."
+    },
+    {
+      "id": "solhrx47bvwe",
+      "text": "The Queen's browser history."
+    },
+    {
+      "id": "1m04a7x8y9yi",
+      "text": "A tantric sex workshop in a WeWork meeting room."
+    },
+    {
+      "id": "zij9cd5yiu6k",
+      "text": "Elon Musk's ninth child's birth certificate."
+    },
+    {
+      "id": "oun607lyxezc",
+      "text": "A colonoscopy live-streamed on Twitch."
+    },
+    {
+      "id": "gfmxj2f53x69",
+      "text": "The last Google search before a very suspicious ER visit."
+    },
+    {
+      "id": "nw7dr0rgv858",
+      "text": "Sending a dick pic to the company-wide Slack."
+    },
+    {
+      "id": "evv5t7zsjl2y",
+      "text": "A sex worker who accepts air miles."
+    },
+    {
+      "id": "1nkjzdij3a08",
+      "text": "The wet sound from HR's office."
+    },
+    {
+      "id": "4cuum9zgsvsx",
+      "text": "A conservative MP's Grindr profile."
+    },
+    {
+      "id": "61p7f2q8fb29",
+      "text": "A sad, lonely erection at 3am."
+    },
+    {
+      "id": "xft63heytpbz",
+      "text": "The Pope's safe word."
+    },
+    {
+      "id": "1a2pxx9lhwgv",
+      "text": "Surprise anal from the housing market."
+    },
+    {
+      "id": "5vy49gmx2dvg",
+      "text": "A wellness influencer who sells her bathwater and her soul."
+    },
+    {
+      "id": "6frwgw04tf8c",
+      "text": "Accidentally moaning your ex's name at your own wedding."
+    },
+    {
+      "id": "3ez951wr2wxc",
+      "text": "A fart that clears a courtroom."
+    },
+    {
+      "id": "rr5w4m8t5j60",
+      "text": "The thing your therapist writes down but never says out loud."
+    },
+    {
+      "id": "2med9o9ssqo1",
+      "text": "A cryptocurrency bro explaining his portfolio from a van."
+    },
+    {
+      "id": "bp8qcqjrsx6u",
+      "text": "An NHS waiting list for a handjob."
+    },
+    {
+      "id": "jkk3c4f027zu",
+      "text": "A sentient sex toy with attachment issues."
+    },
+    {
+      "id": "1qhgu7frg69q",
+      "text": "The moment a vegan discovers bacon."
+    },
+    {
+      "id": "jeliirek350o",
+      "text": "Donald Trump's search history during executive time."
+    },
+    {
+      "id": "cht7nywyyvcx",
+      "text": "A blowjob in exchange for solving the climate crisis."
+    },
+    {
+      "id": "475z6ctfud8i",
+      "text": "Grandma's secret OnlyFans."
+    },
+    {
+      "id": "vr8ef45blb2b",
+      "text": "The thing that fell out during the marathon."
+    },
+    {
+      "id": "hr1ftens39t6",
+      "text": "A divorce settlement that includes the fleshlight."
+    },
+    {
+      "id": "c9wgvmc0sih9",
+      "text": "A badly timed queef in a silent yoga class."
+    },
+    {
+      "id": "9hghnq1y0jcx",
+      "text": "The hidden camera that was definitely not there by accident."
+    },
+    {
+      "id": "l1zci64lg1js",
+      "text": "A politician caught with his trousers down — literally."
+    },
+    {
+      "id": "vdcv0jyorubx",
+      "text": "An aggressive prostate exam from a passive-aggressive doctor."
+    },
+    {
+      "id": "evo3zewi34i4",
+      "text": "Two consenting adults and a deeply confused Roomba."
+    },
+    {
+      "id": "p16waz3k0jdz",
+      "text": "A motivational poster about anal hygiene."
+    },
+    {
+      "id": "p8tld4956x6s",
+      "text": "The look on the plumber's face."
+    },
+    {
+      "id": "m8gfpdw2eh62",
+      "text": "King Charles's private communication with his houseplants."
+    },
+    {
+      "id": "5jvjjb66g4er",
+      "text": "A midlife crisis with excellent thrusting technique."
+    },
+    {
+      "id": "h3ee3ku4ji09",
+      "text": "The HR email that should have been a phone call."
+    },
+    {
+      "id": "y0k8apl2igac",
+      "text": "A corporate team-building exercise that ended in lawsuits."
+    },
+    {
+      "id": "kduxp95lu4sk",
+      "text": "An orgasm that sounded like a dial-up modem."
+    },
+    {
+      "id": "12r8f5vntarw",
+      "text": "The Airbnb review that got the listing taken down."
+    },
+    {
+      "id": "07ocnpdtppys",
+      "text": "Getting ghosted by your dominatrix."
+    },
+    {
+      "id": "6k9epegfu2zi",
+      "text": "A pensioner's surprisingly specific requests at the pharmacy."
+    },
+    {
+      "id": "cfnszvld1yo2",
+      "text": "The thing that made the Uber driver give one star."
+    },
+    {
+      "id": "2l9efajbf5nu",
+      "text": "An NFT of someone's genitals bought by a sitting senator."
+    },
+    {
+      "id": "ybb9n0m6hm8g",
+      "text": "A WeightWatchers orgy."
+    },
+    {
+      "id": "nauhsk755tjt",
+      "text": "The TripAdvisor review of a Bangkok massage parlour."
+    },
+    {
+      "id": "xgzsvdkbtg3m",
+      "text": "Accidentally leaving your sex playlist on during a dinner party."
+    },
+    {
+      "id": "scntw2o503hg",
+      "text": "A police report that uses the word \"lubricated\" four times."
+    },
+    {
+      "id": "0eyu2ssa40np",
+      "text": "The Etsy shop selling handmade butt plugs as \"artisan candles\"."
+    },
+    {
+      "id": "nbzp71kd52cf",
+      "text": "A fertility clinic with suspiciously cheerful staff."
+    },
+    {
+      "id": "ltmvapgwi7jd",
+      "text": "Matt Hancock's deleted texts."
+    },
+    {
+      "id": "i9tyra4joy17",
+      "text": "A sex scene written entirely in corporate jargon."
+    },
+    {
+      "id": "iz3qdkryawpc",
+      "text": "The thing the hotel cleaner found and never reported."
+    },
+    {
+      "id": "6m2syfcvp1cm",
+      "text": "An incognito window with seventeen tabs open."
+    },
+    {
+      "id": "5nuwsti7l1wy",
+      "text": "Two words: \"surprise inspection\"."
+    },
+    {
+      "id": "mpudmynbe530",
+      "text": "A leaked diplomatic cable about Angela Merkel's personal life."
+    },
+    {
+      "id": "rfv5dhc3tgsy",
+      "text": "The noise from next door every single Thursday night."
+    },
+    {
+      "id": "1mxpevsjrjpr",
+      "text": "A badly positioned GoPro at a gender reveal party."
+    },
+    {
+      "id": "31m2kbiswtc5",
+      "text": "Sending your nudes to the wrong WhatsApp group."
+    },
+    {
+      "id": "r234bj3zwla2",
+      "text": "A life coach who charges by the orgasm."
+    },
+    {
+      "id": "1isui4wex5ob",
+      "text": "Fifty-seven years of repressed Catholic guilt released all at once."
+    },
+    {
+      "id": "ukv22ywkr1vd",
+      "text": "A Zoom call where someone forgot to turn off the camera."
+    },
+    {
+      "id": "pfidmu56nkuh",
+      "text": "The MI6 file that would end three careers and one marriage."
+    },
+    {
+      "id": "y6yee0197e4t",
+      "text": "A pub quiz question about clitoral anatomy that got the landlord cancelled."
+    },
+    {
+      "id": "ppmgbbg3d9g7",
+      "text": "The medical term your GP used that you had to Google immediately after."
+    },
+    {
+      "id": "qujq2mpr279i",
+      "text": "A cryptocurrency that's backed entirely by sexual favours."
+    },
+    {
+      "id": "poaf1hj91oow",
+      "text": "The reason your neighbour bought soundproofing foam."
+    },
+    {
+      "id": "csluoj4dh3f3",
+      "text": "A sext sent to the family group chat."
+    },
+    {
+      "id": "svl8hsuflibi",
+      "text": "An A&E visit on Valentine's Day with a very specific complaint."
+    },
+    {
+      "id": "adyv56vpr2ge",
+      "text": "The wedding speech that ended three relationships."
+    }
+  ]
+}
