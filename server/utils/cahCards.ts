@@ -91,17 +91,25 @@ async function loadDbCards(packs: string[]): Promise<{ black: BlackCard[]; white
 // ── Public API ─────────────────────────────────────────────────────────────────
 
 /**
- * Returns merged card arrays for the requested packs.
- * Static JSON cards are combined with any DB-stored cards for the same pack names.
- * Unknown pack names (not in static registry) are fetched from DB only.
+ * DB is the single source of truth (seeded from the JSON files).
+ * For any pack that has no rows in the DB (e.g. dev without Supabase configured),
+ * we fall back to the bundled static JSON so the game still works locally.
  */
 export async function getCardsByPacks(packs: string[]): Promise<{ black: BlackCard[]; white: WhiteCard[] }> {
-  const staticResults = packs.map(loadStaticPack)
   const dbCards = await loadDbCards(packs)
 
+  const packsInDb = new Set([
+    ...dbCards.black.map((c) => c.pack),
+    ...dbCards.white.map((c) => c.pack),
+  ])
+
+  // Fall back to static JSON only for packs absent from DB
+  const fallbackPacks = packs.filter((p) => !packsInDb.has(p))
+  const staticResults = fallbackPacks.map(loadStaticPack)
+
   return {
-    black: [...staticResults.flatMap((r) => r.black), ...dbCards.black],
-    white: [...staticResults.flatMap((r) => r.white), ...dbCards.white],
+    black: [...dbCards.black, ...staticResults.flatMap((r) => r.black)],
+    white: [...dbCards.white, ...staticResults.flatMap((r) => r.white)],
   }
 }
 
