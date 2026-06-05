@@ -180,6 +180,8 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({ middleware: 'auth' })
+
 // mbl-auth sets these state keys via its Nuxt plugin when running in the parent app.
 const user = useState<any>('supabase.user')
 const session = useState<any>('supabase.session')
