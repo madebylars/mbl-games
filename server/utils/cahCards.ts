@@ -66,22 +66,25 @@ async function loadDbCards(packs: string[]): Promise<{ black: BlackCard[]; white
     const supabase = createAnonClient()
     if (!supabase) return { black: [], white: [] }
 
-    const { data, error } = await supabase
-      .from('cah_cards')
-      .select('id, pack, type, text, pick')
-      .in('pack', packs)
-      .limit(10000)
+    const allRows: DbCard[] = []
+    const batchSize = 1000
+    let from = 0
+    while (true) {
+      const { data, error } = await supabase
+        .from('cah_cards')
+        .select('id, pack, type, text, pick')
+        .in('pack', packs)
+        .range(from, from + batchSize - 1)
+      if (error || !data) break
+      allRows.push(...(data as DbCard[]))
+      if (data.length < batchSize) break
+      from += batchSize
+    }
 
-    if (error || !data) return { black: [], white: [] }
-
-    const rows = data as DbCard[]
+    const rows = allRows
     return {
-      black: rows
-        .filter((c) => c.type === 'black')
-        .map((c) => ({ id: c.id, text: c.text, pick: (c.pick ?? 1) as 1 | 2 | 3, pack: c.pack })),
-      white: rows
-        .filter((c) => c.type === 'white')
-        .map((c) => ({ id: c.id, text: c.text, pack: c.pack })),
+      black: rows.filter((c) => c.type === 'black').map((c) => ({ id: c.id, text: c.text, pick: (c.pick ?? 1) as 1 | 2 | 3, pack: c.pack })),
+      white: rows.filter((c) => c.type === 'white').map((c) => ({ id: c.id, text: c.text, pack: c.pack })),
     }
   } catch {
     return { black: [], white: [] }
