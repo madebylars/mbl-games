@@ -12,6 +12,7 @@ export default defineEventHandler(async () => {
         .from('cah_cards')
         .select('pack')
         .order('pack')
+        .limit(10000)
 
       if (data) {
         const unique = [...new Set(data.map((r: { pack: string }) => r.pack))]
