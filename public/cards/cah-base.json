@@ -1,557 +1,2297 @@
 {
   "pack": "base",
   "black": [
-    { "id": "b001", "text": "What's that smell?", "pick": 1 },
-    { "id": "b002", "text": "I got 99 problems but _ ain't one.", "pick": 1 },
-    { "id": "b003", "text": "What are my parents hiding from me?", "pick": 1 },
-    { "id": "b004", "text": "What don't you want to find in your trick-or-treat bag?", "pick": 1 },
-    { "id": "b005", "text": "What gives me uncontrollable gas?", "pick": 1 },
-    { "id": "b006", "text": "What did I bring back from Mexico?", "pick": 1 },
-    { "id": "b007", "text": "Why am I sticky?", "pick": 1 },
-    { "id": "b008", "text": "What's the next Happy Meal toy?", "pick": 1 },
-    { "id": "b009", "text": "Here is the church, here is the steeple, open the doors, and there is _.", "pick": 1 },
-    { "id": "b010", "text": "What ended my last relationship?", "pick": 1 },
-    { "id": "b011", "text": "What's fun until it gets weird?", "pick": 1 },
-    { "id": "b012", "text": "What does Dick Cheney prefer?", "pick": 1 },
-    { "id": "b013", "text": "Before I'll get in the pool, I have to make sure there's no _.", "pick": 1 },
-    { "id": "b014", "text": "DearÚrsula, I am writing to inform you that your daughter is a raging _.", "pick": 1 },
-    { "id": "b015", "text": "I drink to forget _.", "pick": 1 },
-    { "id": "b016", "text": "Instead of coal, Santa now gives bad children _.", "pick": 1 },
-    { "id": "b017", "text": "TSA guidelines now prohibit _ on airplanes.", "pick": 1 },
-    { "id": "b018", "text": "What do old people smell like?", "pick": 1 },
-    { "id": "b019", "text": "What will always get you laid?", "pick": 1 },
-    { "id": "b020", "text": "I never truly understood _ until I encountered _.", "pick": 2 },
-    { "id": "b021", "text": "What's a girl's best friend?", "pick": 1 },
-    { "id": "b022", "text": "In the beginning there was _, and it was good.", "pick": 1 },
-    { "id": "b023", "text": "My new favourite cocktail: equal parts _ and _.", "pick": 2 },
-    { "id": "b024", "text": "After the earthquake, we had nothing left but _ and _.", "pick": 2 },
-    { "id": "b025", "text": "What is Batman's guilty pleasure?", "pick": 1 },
-    { "id": "b026", "text": "In a world ravaged by _, our only solace is _.", "pick": 2 },
-    { "id": "b027", "text": "What am I giving up for Lent?", "pick": 1 },
-    { "id": "b028", "text": "What would grandma find disturbing, yet oddly charming?", "pick": 1 },
-    { "id": "b029", "text": "What's the cruelest thing you can do to a friend?", "pick": 1 },
-    { "id": "b030", "text": "Lifetime presents: _, the story of _.", "pick": 2 },
-    { "id": "b031", "text": "Forget world peace. If I had a genie, I'd wish for _.", "pick": 1 },
-    { "id": "b032", "text": "What has been making life difficult at the nudist colony?", "pick": 1 },
-    { "id": "b033", "text": "What's making things awkward in the sauna?", "pick": 1 },
-    { "id": "b034", "text": "What did the health inspector find in the kitchen?", "pick": 1 },
-    { "id": "b035", "text": "How did I lose my virginity?", "pick": 1 },
-    { "id": "b036", "text": "In his latest book, Malcolm Gladwell argues that _ is the root cause of _ .", "pick": 2 },
-    { "id": "b037", "text": "What's the most emo?", "pick": 1 },
-    { "id": "b038", "text": "After much deliberation, we have decided to add _ to the menu.", "pick": 1 },
-    { "id": "b039", "text": "What did I find in the back of the closet?", "pick": 1 },
-    { "id": "b040", "text": "What makes every family gathering awkward?", "pick": 1 },
-    { "id": "b041", "text": "What's the new fad diet?", "pick": 1 },
-    { "id": "b042", "text": "_ + _ = _.", "pick": 3 },
-    { "id": "b043", "text": "Introducing Pringles new flavour: _.", "pick": 1 },
-    { "id": "b044", "text": "What do I get from a good day's work?", "pick": 1 },
-    { "id": "b045", "text": "A recent survey says that 9 out of 10 Americans prefer _ to _.", "pick": 2 },
-    { "id": "b046", "text": "What does the Sorting Hat say to the new Hogwarts students?", "pick": 1 },
-    { "id": "b047", "text": "What has been making the morning commute awkward lately?", "pick": 1 },
-    { "id": "b048", "text": "In the future, scientists will engineer chickens that are born pre-stuffed with _.", "pick": 1 },
-    { "id": "b049", "text": "What is the secret to a lasting marriage?", "pick": 1 },
-    { "id": "b050", "text": "Next on ESPN2: the World Series of _.", "pick": 1 },
-    { "id": "b051", "text": "What does Miley Cyrus have that I don't?", "pick": 1 },
-    { "id": "b052", "text": "When I was growing up, instead of Santa Claus, we had _.", "pick": 1 },
-    { "id": "b053", "text": "Why do I hurt all over?", "pick": 1 },
-    { "id": "b054", "text": "What's the most important quality in a partner?", "pick": 1 },
-    { "id": "b055", "text": "In a pinch, _ can be a suitable replacement for _.", "pick": 2 },
-    { "id": "b056", "text": "What keeps the cast of Jersey Shore going?", "pick": 1 },
-    { "id": "b057", "text": "What did I put in my mouth that I immediately regretted?", "pick": 1 },
-    { "id": "b058", "text": "What do I think about when I can't fall asleep?", "pick": 1 },
-    { "id": "b059", "text": "I'm pretty sure the zombie apocalypse started with _.", "pick": 1 },
-    { "id": "b060", "text": "What's the plot of the summer blockbuster?", "pick": 1 },
-    { "id": "b061", "text": "How am I compensating for my tiny penis?", "pick": 1 },
-    { "id": "b062", "text": "Kids these days, with their _ and their _.", "pick": 2 },
-    { "id": "b063", "text": "What is my secret power?", "pick": 1 },
-    { "id": "b064", "text": "What gets better with age?", "pick": 1 },
-    { "id": "b065", "text": "Step 1: _. Step 2: _. Step 3: Profit.", "pick": 2 },
-    { "id": "b066", "text": "What do hipsters do on a Saturday night?", "pick": 1 },
-    { "id": "b067", "text": "I would like to thank _ for _ during my acceptance speech.", "pick": 2 },
-    { "id": "b068", "text": "What will I regret most on my deathbed?", "pick": 1 },
-    { "id": "b069", "text": "After the catastrophe, the only thing that remained was _.", "pick": 1 },
-    { "id": "b070", "text": "What did the Buddhist say to the hot dog vendor?", "pick": 1 },
-    { "id": "b071", "text": "I'm sorry, Professor, but I couldn't complete my homework because of _.", "pick": 1 },
-    { "id": "b072", "text": "During Passover, we eat no leavened bread and we remember _.", "pick": 1 },
-    { "id": "b073", "text": "What is the geekiest thing you have ever done?", "pick": 1 },
-    { "id": "b074", "text": "What did the pirate say?", "pick": 1 },
-    { "id": "b075", "text": "What would you like to order?", "pick": 1 },
-    { "id": "b076", "text": "What has the greatest WiFi?", "pick": 1 },
-    { "id": "b077", "text": "Why am I going to jail?", "pick": 1 },
-    { "id": "b078", "text": "What is the most important policy issue in today's debate?", "pick": 1 },
-    { "id": "b079", "text": "What do I tell people my start-up is about?", "pick": 1 },
-    { "id": "b080", "text": "I do not know with what weapons World War III will be fought, but World War IV will be fought with _.", "pick": 1 },
-    { "id": "b081", "text": "Coming to Broadway: the story of one woman's struggle with _ and her ultimate victory over _.", "pick": 2 },
-    { "id": "b082", "text": "Man, I hate it when _ gets in my _ .", "pick": 2 },
-    { "id": "b083", "text": "How did I finally lose all that weight?", "pick": 1 },
-    { "id": "b084", "text": "What's always a surprise at a surprise party?", "pick": 1 },
-    { "id": "b085", "text": "What is love?", "pick": 1 },
-    { "id": "b086", "text": "What is that sound?", "pick": 1 },
-    { "id": "b087", "text": "What never gets old?", "pick": 1 },
-    { "id": "b088", "text": "In M. Night Shyamalan's new film, Bruce Willis discovers that _ had been _ the whole time.", "pick": 2 },
-    { "id": "b089", "text": "What is my dad's job?", "pick": 1 },
-    { "id": "b090", "text": "What is the most important thing to sign before surgery?", "pick": 1 }
+    {
+      "id": "2rdp156uinty",
+      "text": "What's that smell?",
+      "pick": 1
+    },
+    {
+      "id": "76axrj66sbzu",
+      "text": "I got 99 problems but _ ain't one.",
+      "pick": 1
+    },
+    {
+      "id": "9jyxmgevp3fa",
+      "text": "What are my parents hiding from me?",
+      "pick": 1
+    },
+    {
+      "id": "smlyfv3t2og4",
+      "text": "What don't you want to find in your trick-or-treat bag?",
+      "pick": 1
+    },
+    {
+      "id": "gzd4oty55jif",
+      "text": "What gives me uncontrollable gas?",
+      "pick": 1
+    },
+    {
+      "id": "cy1yb87ma45u",
+      "text": "What did I bring back from Mexico?",
+      "pick": 1
+    },
+    {
+      "id": "pn186vvqe0a7",
+      "text": "Why am I sticky?",
+      "pick": 1
+    },
+    {
+      "id": "yxyk9vg60to7",
+      "text": "What's the next Happy Meal toy?",
+      "pick": 1
+    },
+    {
+      "id": "g7i6sldtoto6",
+      "text": "Here is the church, here is the steeple, open the doors, and there is _.",
+      "pick": 1
+    },
+    {
+      "id": "4inpdb6ggb1a",
+      "text": "What ended my last relationship?",
+      "pick": 1
+    },
+    {
+      "id": "jk5h6h1kfk9u",
+      "text": "What's fun until it gets weird?",
+      "pick": 1
+    },
+    {
+      "id": "it5wyzk2fd4l",
+      "text": "What does Dick Cheney prefer?",
+      "pick": 1
+    },
+    {
+      "id": "4u37hdeodw1a",
+      "text": "Before I'll get in the pool, I have to make sure there's no _.",
+      "pick": 1
+    },
+    {
+      "id": "fh8l7n5g2yvs",
+      "text": "DearÚrsula, I am writing to inform you that your daughter is a raging _.",
+      "pick": 1
+    },
+    {
+      "id": "8d0adn9o3j2j",
+      "text": "I drink to forget _.",
+      "pick": 1
+    },
+    {
+      "id": "8u8hs6qofku3",
+      "text": "Instead of coal, Santa now gives bad children _.",
+      "pick": 1
+    },
+    {
+      "id": "hh2rectqo6kd",
+      "text": "TSA guidelines now prohibit _ on airplanes.",
+      "pick": 1
+    },
+    {
+      "id": "580ug5i6wc61",
+      "text": "What do old people smell like?",
+      "pick": 1
+    },
+    {
+      "id": "gcejmw5vo6h5",
+      "text": "What will always get you laid?",
+      "pick": 1
+    },
+    {
+      "id": "4dfxvcwh2b2p",
+      "text": "I never truly understood _ until I encountered _.",
+      "pick": 2
+    },
+    {
+      "id": "49fznrkhb3by",
+      "text": "What's a girl's best friend?",
+      "pick": 1
+    },
+    {
+      "id": "fh1wkfyieucy",
+      "text": "In the beginning there was _, and it was good.",
+      "pick": 1
+    },
+    {
+      "id": "lf1kwmdcmai1",
+      "text": "My new favourite cocktail: equal parts _ and _.",
+      "pick": 2
+    },
+    {
+      "id": "htz5y7kfzzis",
+      "text": "After the earthquake, we had nothing left but _ and _.",
+      "pick": 2
+    },
+    {
+      "id": "fuvw2ywj0qom",
+      "text": "What is Batman's guilty pleasure?",
+      "pick": 1
+    },
+    {
+      "id": "8gm8o0g7rxb3",
+      "text": "In a world ravaged by _, our only solace is _.",
+      "pick": 2
+    },
+    {
+      "id": "jz0qfbgpp3of",
+      "text": "What am I giving up for Lent?",
+      "pick": 1
+    },
+    {
+      "id": "d65jr8pnbf0y",
+      "text": "What would grandma find disturbing, yet oddly charming?",
+      "pick": 1
+    },
+    {
+      "id": "qltwbh5qha89",
+      "text": "What's the cruelest thing you can do to a friend?",
+      "pick": 1
+    },
+    {
+      "id": "djl871ocaxmb",
+      "text": "Lifetime presents: _, the story of _.",
+      "pick": 2
+    },
+    {
+      "id": "znc3iehwquo5",
+      "text": "Forget world peace. If I had a genie, I'd wish for _.",
+      "pick": 1
+    },
+    {
+      "id": "9mkjcy9fsy86",
+      "text": "What has been making life difficult at the nudist colony?",
+      "pick": 1
+    },
+    {
+      "id": "iqgnztp6juaf",
+      "text": "What's making things awkward in the sauna?",
+      "pick": 1
+    },
+    {
+      "id": "1991qmhhjqrx",
+      "text": "What did the health inspector find in the kitchen?",
+      "pick": 1
+    },
+    {
+      "id": "hvmnieg45ptw",
+      "text": "How did I lose my virginity?",
+      "pick": 1
+    },
+    {
+      "id": "7pctk4magfxn",
+      "text": "In his latest book, Malcolm Gladwell argues that _ is the root cause of _ .",
+      "pick": 2
+    },
+    {
+      "id": "q41kdqxt5x0q",
+      "text": "What's the most emo?",
+      "pick": 1
+    },
+    {
+      "id": "l0wxik1ikqsq",
+      "text": "After much deliberation, we have decided to add _ to the menu.",
+      "pick": 1
+    },
+    {
+      "id": "16yptufls9xl",
+      "text": "What did I find in the back of the closet?",
+      "pick": 1
+    },
+    {
+      "id": "wythfkrjkcnb",
+      "text": "What makes every family gathering awkward?",
+      "pick": 1
+    },
+    {
+      "id": "b2dcdv408f9u",
+      "text": "What's the new fad diet?",
+      "pick": 1
+    },
+    {
+      "id": "6bp02htdwz5c",
+      "text": "_ + _ = _.",
+      "pick": 3
+    },
+    {
+      "id": "n10ttntfazuy",
+      "text": "Introducing Pringles new flavour: _.",
+      "pick": 1
+    },
+    {
+      "id": "fz4mrcvucy8d",
+      "text": "What do I get from a good day's work?",
+      "pick": 1
+    },
+    {
+      "id": "0my0k36irmpm",
+      "text": "A recent survey says that 9 out of 10 Americans prefer _ to _.",
+      "pick": 2
+    },
+    {
+      "id": "jx7j6xszmhig",
+      "text": "What does the Sorting Hat say to the new Hogwarts students?",
+      "pick": 1
+    },
+    {
+      "id": "3w21ti016zqp",
+      "text": "What has been making the morning commute awkward lately?",
+      "pick": 1
+    },
+    {
+      "id": "dnt7hi6p8qct",
+      "text": "In the future, scientists will engineer chickens that are born pre-stuffed with _.",
+      "pick": 1
+    },
+    {
+      "id": "eas512m1vax5",
+      "text": "What is the secret to a lasting marriage?",
+      "pick": 1
+    },
+    {
+      "id": "j8myon0npxmh",
+      "text": "Next on ESPN2: the World Series of _.",
+      "pick": 1
+    },
+    {
+      "id": "svcpdoa44asy",
+      "text": "What does Miley Cyrus have that I don't?",
+      "pick": 1
+    },
+    {
+      "id": "t532x441oqo7",
+      "text": "When I was growing up, instead of Santa Claus, we had _.",
+      "pick": 1
+    },
+    {
+      "id": "nzgrpr2uu4p5",
+      "text": "Why do I hurt all over?",
+      "pick": 1
+    },
+    {
+      "id": "jkxiuhg1ybna",
+      "text": "What's the most important quality in a partner?",
+      "pick": 1
+    },
+    {
+      "id": "q9isexg137bz",
+      "text": "In a pinch, _ can be a suitable replacement for _.",
+      "pick": 2
+    },
+    {
+      "id": "mcpksvkiz60v",
+      "text": "What keeps the cast of Jersey Shore going?",
+      "pick": 1
+    },
+    {
+      "id": "76bjslkuib99",
+      "text": "What did I put in my mouth that I immediately regretted?",
+      "pick": 1
+    },
+    {
+      "id": "zrh55luiobp7",
+      "text": "What do I think about when I can't fall asleep?",
+      "pick": 1
+    },
+    {
+      "id": "ulyoyg7bvdtr",
+      "text": "I'm pretty sure the zombie apocalypse started with _.",
+      "pick": 1
+    },
+    {
+      "id": "i7c1mep79p6r",
+      "text": "What's the plot of the summer blockbuster?",
+      "pick": 1
+    },
+    {
+      "id": "sdqh2baxf8uv",
+      "text": "How am I compensating for my tiny penis?",
+      "pick": 1
+    },
+    {
+      "id": "i74lpgrf9q7k",
+      "text": "Kids these days, with their _ and their _.",
+      "pick": 2
+    },
+    {
+      "id": "0cqi7lo0601h",
+      "text": "What is my secret power?",
+      "pick": 1
+    },
+    {
+      "id": "xar61maxd8sh",
+      "text": "What gets better with age?",
+      "pick": 1
+    },
+    {
+      "id": "7orznsev8f11",
+      "text": "Step 1: _. Step 2: _. Step 3: Profit.",
+      "pick": 2
+    },
+    {
+      "id": "zt25pkrwzh66",
+      "text": "What do hipsters do on a Saturday night?",
+      "pick": 1
+    },
+    {
+      "id": "zxxdjvchfxd0",
+      "text": "I would like to thank _ for _ during my acceptance speech.",
+      "pick": 2
+    },
+    {
+      "id": "dpylytgo95n9",
+      "text": "What will I regret most on my deathbed?",
+      "pick": 1
+    },
+    {
+      "id": "umyjuj9osg9v",
+      "text": "After the catastrophe, the only thing that remained was _.",
+      "pick": 1
+    },
+    {
+      "id": "qzm7gcc39htt",
+      "text": "What did the Buddhist say to the hot dog vendor?",
+      "pick": 1
+    },
+    {
+      "id": "mvpvgmbcru9l",
+      "text": "I'm sorry, Professor, but I couldn't complete my homework because of _.",
+      "pick": 1
+    },
+    {
+      "id": "lg5tsxguwejm",
+      "text": "During Passover, we eat no leavened bread and we remember _.",
+      "pick": 1
+    },
+    {
+      "id": "k0aoayun4s4g",
+      "text": "What is the geekiest thing you have ever done?",
+      "pick": 1
+    },
+    {
+      "id": "cjarmvh2aol4",
+      "text": "What did the pirate say?",
+      "pick": 1
+    },
+    {
+      "id": "bcd6jfq6qitn",
+      "text": "What would you like to order?",
+      "pick": 1
+    },
+    {
+      "id": "wgo8ol7oito8",
+      "text": "What has the greatest WiFi?",
+      "pick": 1
+    },
+    {
+      "id": "joxwvsvztew2",
+      "text": "Why am I going to jail?",
+      "pick": 1
+    },
+    {
+      "id": "h8m3b5fhztcv",
+      "text": "What is the most important policy issue in today's debate?",
+      "pick": 1
+    },
+    {
+      "id": "8qb8hpoj3o6j",
+      "text": "What do I tell people my start-up is about?",
+      "pick": 1
+    },
+    {
+      "id": "xdnuz9qrbyc1",
+      "text": "I do not know with what weapons World War III will be fought, but World War IV will be fought with _.",
+      "pick": 1
+    },
+    {
+      "id": "nfzxvftull59",
+      "text": "Coming to Broadway: the story of one woman's struggle with _ and her ultimate victory over _.",
+      "pick": 2
+    },
+    {
+      "id": "q4lpn5dyfhig",
+      "text": "Man, I hate it when _ gets in my _ .",
+      "pick": 2
+    },
+    {
+      "id": "eo5brf68vbor",
+      "text": "How did I finally lose all that weight?",
+      "pick": 1
+    },
+    {
+      "id": "iz8e7f0ix52p",
+      "text": "What's always a surprise at a surprise party?",
+      "pick": 1
+    },
+    {
+      "id": "3tyqw3vcup8u",
+      "text": "What is love?",
+      "pick": 1
+    },
+    {
+      "id": "teb12skvsb01",
+      "text": "What is that sound?",
+      "pick": 1
+    },
+    {
+      "id": "f7xd5s0yimbm",
+      "text": "What never gets old?",
+      "pick": 1
+    },
+    {
+      "id": "pgps2kyo0a6x",
+      "text": "In M. Night Shyamalan's new film, Bruce Willis discovers that _ had been _ the whole time.",
+      "pick": 2
+    },
+    {
+      "id": "txglltu19olq",
+      "text": "What is my dad's job?",
+      "pick": 1
+    },
+    {
+      "id": "67xgvhk1cq3m",
+      "text": "What is the most important thing to sign before surgery?",
+      "pick": 1
+    }
   ],
   "white": [
-    { "id": "w001", "text": "A disappointing birthday party." },
-    { "id": "w002", "text": "A sassy black woman." },
-    { "id": "w003", "text": "Pretending to care." },
-    { "id": "w004", "text": "The weird feeling you get when someone is clearly lying." },
-    { "id": "w005", "text": "Alcoholism." },
-    { "id": "w006", "text": "Passive-aggressive Post-it notes." },
-    { "id": "w007", "text": "A subscription to your enemies' problems." },
-    { "id": "w008", "text": "Racially-biased standardized tests." },
-    { "id": "w009", "text": "Being on fire." },
-    { "id": "w010", "text": "Genital to genital contact." },
-    { "id": "w011", "text": "White privilege." },
-    { "id": "w012", "text": "Hope." },
-    { "id": "w013", "text": "Frolicking." },
-    { "id": "w014", "text": "Inappropriate yelling." },
-    { "id": "w015", "text": "Authentic Mexican flavour." },
-    { "id": "w016", "text": "Ronald McDonald." },
-    { "id": "w017", "text": "Explosions." },
-    { "id": "w018", "text": "The female orgasm." },
-    { "id": "w019", "text": "Chunks." },
-    { "id": "w020", "text": "Mr. Clean." },
-    { "id": "w021", "text": "A cooler full of organs." },
-    { "id": "w022", "text": "The class pet." },
-    { "id": "w023", "text": "An honest answer." },
-    { "id": "w024", "text": "Nipple blades." },
-    { "id": "w025", "text": "Vigorous jazz hands." },
-    { "id": "w026", "text": "Poverty." },
-    { "id": "w027", "text": "Classist undertones." },
-    { "id": "w028", "text": "Fifty years of true love." },
-    { "id": "w029", "text": "One thousand Slim Shadys." },
-    { "id": "w030", "text": "Waking up half-naked in a Denny's parking lot." },
-    { "id": "w031", "text": "Finger-banging." },
-    { "id": "w032", "text": "Estrogen." },
-    { "id": "w033", "text": "Foreskin." },
-    { "id": "w034", "text": "The inevitable heat death of the universe." },
-    { "id": "w035", "text": "Science." },
-    { "id": "w036", "text": "A really cool hat." },
-    { "id": "w037", "text": "Eating all of the cookies before the rest of the family gets home." },
-    { "id": "w038", "text": "Bees?" },
-    { "id": "w039", "text": "German dungeon porn." },
-    { "id": "w040", "text": "Swiftly achieving orgasm." },
-    { "id": "w041", "text": "Flying sex snakes." },
-    { "id": "w042", "text": "Ethnic cleansing." },
-    { "id": "w043", "text": "Natural lube." },
-    { "id": "w044", "text": "Powerful thighs." },
-    { "id": "w045", "text": "The whole Mormon thing." },
-    { "id": "w046", "text": "The shambling corpse of Larry King." },
-    { "id": "w047", "text": "Praying the gay away." },
-    { "id": "w048", "text": "Getting paid." },
-    { "id": "w049", "text": "Menstruation." },
-    { "id": "w050", "text": "Repression." },
-    { "id": "w051", "text": "My first period." },
-    { "id": "w052", "text": "Dry anal." },
-    { "id": "w053", "text": "Public masturbation." },
-    { "id": "w054", "text": "Horse-sized ducks." },
-    { "id": "w055", "text": "Being a dinosaur." },
-    { "id": "w056", "text": "Republicans." },
-    { "id": "w057", "text": "Dead parents." },
-    { "id": "w058", "text": "Puppies!" },
-    { "id": "w059", "text": "Leprosy." },
-    { "id": "w060", "text": "The situation in the Middle East." },
-    { "id": "w061", "text": "Smallpox blankets." },
-    { "id": "w062", "text": "Unsubstantiated medical advice." },
-    { "id": "w063", "text": "Sean Connery." },
-    { "id": "w064", "text": "Living in a dream world." },
-    { "id": "w065", "text": "Literally getting away with murder." },
-    { "id": "w066", "text": "Dick Cheney." },
-    { "id": "w067", "text": "Teaching your dog to say 'I love you'." },
-    { "id": "w068", "text": "Heteronormativity." },
-    { "id": "w069", "text": "Lactation." },
-    { "id": "w070", "text": "God." },
-    { "id": "w071", "text": "Her Majesty, Queen Elizabeth II." },
-    { "id": "w072", "text": "The total and complete loss of hope." },
-    { "id": "w073", "text": "Taking a ramen noodle bath." },
-    { "id": "w074", "text": "Flesh-eating bacteria." },
-    { "id": "w075", "text": "Heterosexual privilege." },
-    { "id": "w076", "text": "Masturbating into a pool of tears." },
-    { "id": "w077", "text": "The glass ceiling." },
-    { "id": "w078", "text": "Winking at old people." },
-    { "id": "w079", "text": "Being rich." },
-    { "id": "w080", "text": "Eating ice cream alone in the dark." },
-    { "id": "w081", "text": "Two midgets trying to get into a car." },
-    { "id": "w082", "text": "Surprise sex!" },
-    { "id": "w083", "text": "The look on my dog's face when he smells another dog's butthole." },
-    { "id": "w084", "text": "Tossing the first stone." },
-    { "id": "w085", "text": "Dying." },
-    { "id": "w086", "text": "Waiting until marriage." },
-    { "id": "w087", "text": "Being creepily nice." },
-    { "id": "w088", "text": "Cheating in the Special Olympics." },
-    { "id": "w089", "text": "Pretending to orgasm." },
-    { "id": "w090", "text": "A really strong orgasm." },
-    { "id": "w091", "text": "An erection that lasts longer than four hours." },
-    { "id": "w092", "text": "Jibber-jabber." },
-    { "id": "w093", "text": "Getting drunk on mouthwash." },
-    { "id": "w094", "text": "A detailed note on how to make a bomb." },
-    { "id": "w095", "text": "An old man's soupçon of dignity." },
-    { "id": "w096", "text": "My manservant, Claude." },
-    { "id": "w097", "text": "A tiny horse." },
-    { "id": "w098", "text": "My ex-wife's alimony payments." },
-    { "id": "w099", "text": "Nicolas Cage." },
-    { "id": "w100", "text": "Forgetting to take the baby out of the car." },
-    { "id": "w101", "text": "Racism." },
-    { "id": "w102", "text": "A windmill full of corpses." },
-    { "id": "w103", "text": "Nunchucks." },
-    { "id": "w104", "text": "Assless chaps." },
-    { "id": "w105", "text": "The musk of a Viking warrior." },
-    { "id": "w106", "text": "Passive-aggression." },
-    { "id": "w107", "text": "A sweet ass." },
-    { "id": "w108", "text": "The Hamburglar." },
-    { "id": "w109", "text": "A home circumcision kit." },
-    { "id": "w110", "text": "A falcon with a cap on." },
-    { "id": "w111", "text": "The heart of a child." },
-    { "id": "w112", "text": "Oomph." },
-    { "id": "w113", "text": "Nickelback." },
-    { "id": "w114", "text": "Meth." },
-    { "id": "w115", "text": "A bag of magic beans." },
-    { "id": "w116", "text": "Sexy pillow fights." },
-    { "id": "w117", "text": "Count Chocula." },
-    { "id": "w118", "text": "Lance Armstrong's missing testicle." },
-    { "id": "w119", "text": "Amputees." },
-    { "id": "w120", "text": "A snapping turtle biting the tip of your penis." },
-    { "id": "w121", "text": "Dead babies." },
-    { "id": "w122", "text": "Not giving a shit about the Third World." },
-    { "id": "w123", "text": "The Big Bang." },
-    { "id": "w124", "text": "My relationship with Jesus." },
-    { "id": "w125", "text": "Firing a man cannon." },
-    { "id": "w126", "text": "Funky-smelling nipples." },
-    { "id": "w127", "text": "Warlords." },
-    { "id": "w128", "text": "Poorly-timed Holocaust jokes." },
-    { "id": "w129", "text": "Jews." },
-    { "id": "w130", "text": "Exactly what you'd expect." },
-    { "id": "w131", "text": "Waiting until she's asleep." },
-    { "id": "w132", "text": "Syphilis." },
-    { "id": "w133", "text": "Hormone therapy." },
-    { "id": "w134", "text": "A fetus." },
-    { "id": "w135", "text": "The Trail of Tears." },
-    { "id": "w136", "text": "Getting really high and learning to jump-start a car." },
-    { "id": "w137", "text": "My inner demons." },
-    { "id": "w138", "text": "Letting yourself go." },
-    { "id": "w139", "text": "Genital warts." },
-    { "id": "w140", "text": "Barack Obama." },
-    { "id": "w141", "text": "Sweet, sweet vengeance." },
-    { "id": "w142", "text": "A balanced breakfast." },
-    { "id": "w143", "text": "Extremely tight pants." },
-    { "id": "w144", "text": "Being a dragon." },
-    { "id": "w145", "text": "A really mediocre guy." },
-    { "id": "w146", "text": "Whatever the Germans have instead of schadenfreude." },
-    { "id": "w147", "text": "The patriarchy." },
-    { "id": "w148", "text": "My collection of high-quality pornography." },
-    { "id": "w149", "text": "A gyrating pelvis." },
-    { "id": "w150", "text": "Eating the last piece without asking." },
-    { "id": "w151", "text": "Not wearing a condom." },
-    { "id": "w152", "text": "Warm, velvety mink." },
-    { "id": "w153", "text": "The harsh light of day." },
-    { "id": "w154", "text": "Glenn Beck's tears." },
-    { "id": "w155", "text": "Being marginalized." },
-    { "id": "w156", "text": "A leprechaun smoking a cigar on a throne of gold." },
-    { "id": "w157", "text": "A flaming bag of dog shit." },
-    { "id": "w158", "text": "Growing up without a father." },
-    { "id": "w159", "text": "Old people smell." },
-    { "id": "w160", "text": "Making a friend." },
-    { "id": "w161", "text": "Turning into a sausage." },
-    { "id": "w162", "text": "Picking up a dog poo with your bare hand." },
-    { "id": "w163", "text": "Accidentally pooping." },
-    { "id": "w164", "text": "Punching a hole through the moon." },
-    { "id": "w165", "text": "The Jews." },
-    { "id": "w166", "text": "AIDS." },
-    { "id": "w167", "text": "A time machine that only goes to the worst historical periods." },
-    { "id": "w168", "text": "Inserting a _____ into a _____." },
-    { "id": "w169", "text": "The experience of going to Applebee's." },
-    { "id": "w170", "text": "Using one eye to look into the past and one to see the future." },
-    { "id": "w171", "text": "Chunks of a dead prostitute." },
-    { "id": "w172", "text": "Feeding Bibles to the homeless." },
-    { "id": "w173", "text": "Copping a feel." },
-    { "id": "w174", "text": "A Bulbasaur." },
-    { "id": "w175", "text": "The American Dream." },
-    { "id": "w176", "text": "A really sloppy Joe." },
-    { "id": "w177", "text": "The terrorists." },
-    { "id": "w178", "text": "Wasting entire days on the internet." },
-    { "id": "w179", "text": "Sexy, sexy robots." },
-    { "id": "w180", "text": "Rehab." },
-    { "id": "w181", "text": "A fat man in a Speedo." },
-    { "id": "w182", "text": "Emotional baggage." },
-    { "id": "w183", "text": "Running away from my problems." },
-    { "id": "w184", "text": "Unfathomable stupidity." },
-    { "id": "w185", "text": "Skeletons that can dance." },
-    { "id": "w186", "text": "Edible underpants." },
-    { "id": "w187", "text": "A giant, steaming pile of bingo cards." },
-    { "id": "w188", "text": "An Oedipus complex." },
-    { "id": "w189", "text": "Being Jewish." },
-    { "id": "w190", "text": "When you forget the safeword." },
-    { "id": "w191", "text": "The dark arts." },
-    { "id": "w192", "text": "Insincere apologies." },
-    { "id": "w193", "text": "Lunchables." },
-    { "id": "w194", "text": "A dog in a bee costume." },
-    { "id": "w195", "text": "Pooping back and forth forever." },
-    { "id": "w196", "text": "Poorly-executed foreplay." },
-    { "id": "w197", "text": "Tasteful sideboob." },
-    { "id": "w198", "text": "Catastrophic urethral failure." },
-    { "id": "w199", "text": "All of this blood." },
-    { "id": "w200", "text": "The taint, the grundle, the grundulum." },
-    { "id": "w201", "text": "Auschwitz." },
-    { "id": "w202", "text": "Pubic hair." },
-    { "id": "w203", "text": "A cartoon caricature of a black person." },
-    { "id": "w204", "text": "Spontaneous human combustion." },
-    { "id": "w205", "text": "A lifetime of sadness." },
-    { "id": "w206", "text": "A face full of crazy." },
-    { "id": "w207", "text": "Tentacle porn." },
-    { "id": "w208", "text": "Throwing a virgin into a volcano." },
-    { "id": "w209", "text": "A majestic eagle." },
-    { "id": "w210", "text": "What Jesus would have done." },
-    { "id": "w211", "text": "A bleached asshole." },
-    { "id": "w212", "text": "Silence." },
-    { "id": "w213", "text": "William Shatner." },
-    { "id": "w214", "text": "Dry heaving." },
-    { "id": "w215", "text": "A monkey driving a truck." },
-    { "id": "w216", "text": "Slowly giving up." },
-    { "id": "w217", "text": "Date rape." },
-    { "id": "w218", "text": "Men." },
-    { "id": "w219", "text": "Vigorous masturbation." },
-    { "id": "w220", "text": "The profoundly handicapped." },
-    { "id": "w221", "text": "A syringe of Axe body spray." },
-    { "id": "w222", "text": "Explosive diarrhea." },
-    { "id": "w223", "text": "The clitoris." },
-    { "id": "w224", "text": "Queefing." },
-    { "id": "w225", "text": "Being sexually attracted to Batman." },
-    { "id": "w226", "text": "Chainsaws for hands." },
-    { "id": "w227", "text": "The true nature of the universe." },
-    { "id": "w228", "text": "A disappointing son." },
-    { "id": "w229", "text": "Being fat and stupid." },
-    { "id": "w230", "text": "Overcompensation." },
-    { "id": "w231", "text": "The miracle of childbirth." },
-    { "id": "w232", "text": "Forgetting to use a condom." },
-    { "id": "w233", "text": "Stabbing someone." },
-    { "id": "w234", "text": "Battered Spouse Syndrome." },
-    { "id": "w235", "text": "Oppression." },
-    { "id": "w236", "text": "The hardworking genitalia of Mexican immigrants." },
-    { "id": "w237", "text": "Surprise buttsex." },
-    { "id": "w238", "text": "Bitches." },
-    { "id": "w239", "text": "A gentle caress." },
-    { "id": "w240", "text": "Fiery poops." },
-    { "id": "w241", "text": "Dying alone." },
-    { "id": "w242", "text": "Hot cheese." },
-    { "id": "w243", "text": "Making a baby cry." },
-    { "id": "w244", "text": "The Pope." },
-    { "id": "w245", "text": "A picture of your genitals." },
-    { "id": "w246", "text": "Involuntary erections." },
-    { "id": "w247", "text": "The invisible hand of the free market." },
-    { "id": "w248", "text": "An intimate dinner for two." },
-    { "id": "w249", "text": "A tiny, hilariously-large phone." },
-    { "id": "w250", "text": "The hard-knock life." },
-    { "id": "w251", "text": "Not reciprocating oral sex." },
-    { "id": "w252", "text": "Crystal meth." },
-    { "id": "w253", "text": "Friends who eat all your food." },
-    { "id": "w254", "text": "The violation of our most basic human rights." },
-    { "id": "w255", "text": "A can of whoop-ass." },
-    { "id": "w256", "text": "Seductive eyebrows." },
-    { "id": "w257", "text": "Getting drunk on a Tuesday." },
-    { "id": "w258", "text": "Prancing." },
-    { "id": "w259", "text": "Dying of dysentery." },
-    { "id": "w260", "text": "My collection of foreign stamps." },
-    { "id": "w261", "text": "Googling 'what is a clitoris'." },
-    { "id": "w262", "text": "An enormous amount of cocaine." },
-    { "id": "w263", "text": "A death ray." },
-    { "id": "w264", "text": "Murdering a hobo." },
-    { "id": "w265", "text": "The number of people I've slept with." },
-    { "id": "w266", "text": "Sticking a needle in your arm." },
-    { "id": "w267", "text": "Making a woman sad." },
-    { "id": "w268", "text": "Holding down a girl." },
-    { "id": "w269", "text": "Smegma." },
-    { "id": "w270", "text": "Getting so angry you can't speak." },
-    { "id": "w271", "text": "Sharing needles." },
-    { "id": "w272", "text": "A giant robot penis." },
-    { "id": "w273", "text": "The weird conversation at the end of a one-night stand." },
-    { "id": "w274", "text": "Accidentally reading the Bible." },
-    { "id": "w275", "text": "Goblins." },
-    { "id": "w276", "text": "The underground railroad." },
-    { "id": "w277", "text": "The blood of our enemies." },
-    { "id": "w278", "text": "Fisting." },
-    { "id": "w279", "text": "The tears of a clown." },
-    { "id": "w280", "text": "Being the little spoon." },
-    { "id": "w281", "text": "The life-giving power of the Sun." },
-    { "id": "w282", "text": "Drinking alone." },
-    { "id": "w283", "text": "Falling in love." },
-    { "id": "w284", "text": "Teaching a horse to cheat at poker." },
-    { "id": "w285", "text": "The cool parts of the Bible." },
-    { "id": "w286", "text": "A really good lawyer." },
-    { "id": "w287", "text": "Churning butter." },
-    { "id": "w288", "text": "Feelings." },
-    { "id": "w289", "text": "Apologizing." },
-    { "id": "w290", "text": "The big one." },
-    { "id": "w291", "text": "My sex face." },
-    { "id": "w292", "text": "Peeing a little bit." },
-    { "id": "w293", "text": "Waking up and forgetting where I am." },
-    { "id": "w294", "text": "Old-people sex." },
-    { "id": "w295", "text": "A fleshlight." },
-    { "id": "w296", "text": "Children on leashes." },
-    { "id": "w297", "text": "Tying the knot." },
-    { "id": "w298", "text": "A box of kittens." },
-    { "id": "w299", "text": "An unhappy ending." },
-    { "id": "w300", "text": "Human rights violations." },
-    { "id": "w301", "text": "Throwing up into someone's hair." },
-    { "id": "w302", "text": "Getting fingered by Edward Scissorhands." },
-    { "id": "w303", "text": "The gays." },
-    { "id": "w304", "text": "Doing the right thing." },
-    { "id": "w305", "text": "A poodle of some kind." },
-    { "id": "w306", "text": "The last slice of pizza." },
-    { "id": "w307", "text": "A disappointed look." },
-    { "id": "w308", "text": "Getting established." },
-    { "id": "w309", "text": "Puberty." },
-    { "id": "w310", "text": "Crying while eating." },
-    { "id": "w311", "text": "Throwing away your dreams." },
-    { "id": "w312", "text": "Seeing Mama Cass eat a ham sandwich." },
-    { "id": "w313", "text": "Former President George W. Bush." },
-    { "id": "w314", "text": "Eating all the food." },
-    { "id": "w315", "text": "Abstinence-only sex education." },
-    { "id": "w316", "text": "Chunks of a fresh maxi-pad." },
-    { "id": "w317", "text": "A really big fork." },
-    { "id": "w318", "text": "A baby crying." },
-    { "id": "w319", "text": "Roofies." },
-    { "id": "w320", "text": "Taking a giant dump." },
-    { "id": "w321", "text": "Holding someone down." },
-    { "id": "w322", "text": "Jerking off into a pool of tears." },
-    { "id": "w323", "text": "The milk of human kindness." },
-    { "id": "w324", "text": "Hissing yourself awake." },
-    { "id": "w325", "text": "A Yelp review of the Holocaust." },
-    { "id": "w326", "text": "A look of religious ecstasy." },
-    { "id": "w327", "text": "Flesh." },
-    { "id": "w328", "text": "Apologetic diarrhea." },
-    { "id": "w329", "text": "Being poor." },
-    { "id": "w330", "text": "A gassy German man." },
-    { "id": "w331", "text": "Pummelling the shit out of someone." },
-    { "id": "w332", "text": "Balls." },
-    { "id": "w333", "text": "Eating pussy." },
-    { "id": "w334", "text": "Vigorous ass-slapping." },
-    { "id": "w335", "text": "Not realising that the Holocaust was actually pretty bad." },
-    { "id": "w336", "text": "A sad orphan." },
-    { "id": "w337", "text": "Being on too many medications at once." },
-    { "id": "w338", "text": "A 55-gallon drum of lube." },
-    { "id": "w339", "text": "Molestation." },
-    { "id": "w340", "text": "Tom Cruise." },
-    { "id": "w341", "text": "The human body." },
-    { "id": "w342", "text": "Pretending to be happy." },
-    { "id": "w343", "text": "Dead babies." },
-    { "id": "w344", "text": "A sassy black woman who don't take no shit." },
-    { "id": "w345", "text": "Eugenics." },
-    { "id": "w346", "text": "Sneezing, farting, and orgasming at the same time." },
-    { "id": "w347", "text": "Unprotected sex with multiple partners." },
-    { "id": "w348", "text": "The moon." },
-    { "id": "w349", "text": "Weeaboos." },
-    { "id": "w350", "text": "Multiple stab wounds." },
-    { "id": "w351", "text": "A sewer of broken dreams." },
-    { "id": "w352", "text": "The three R's: Reading, Writing, and Arson." },
-    { "id": "w353", "text": "Human-animal hybrids." },
-    { "id": "w354", "text": "Pac-Man uncontrollably guzzling cum." },
-    { "id": "w355", "text": "Fiery poops." },
-    { "id": "w356", "text": "Eating someone's hair." },
-    { "id": "w357", "text": "The 72 virgins." },
-    { "id": "w358", "text": "Grandma's dentures." },
-    { "id": "w359", "text": "A beige cardigan." },
-    { "id": "w360", "text": "A dragon that breathes fire, and also is racist." },
-    { "id": "w361", "text": "Morgan Freeman's voice." },
-    { "id": "w362", "text": "Wearing a birthday suit in a non-birthday context." },
-    { "id": "w363", "text": "A sad, sad man." },
-    { "id": "w364", "text": "Ruining the sex mood with bad techno music." },
-    { "id": "w365", "text": "A tribe of warrior women." },
-    { "id": "w366", "text": "Not enough lube." },
-    { "id": "w367", "text": "Forgetting to pull out." },
-    { "id": "w368", "text": "A porcupine getting a bikini wax." },
-    { "id": "w369", "text": "The hardworking men and women of the armed forces." },
-    { "id": "w370", "text": "Bitchy resting face." },
-    { "id": "w371", "text": "Too much pie." },
-    { "id": "w372", "text": "Hurricane Katrina." },
-    { "id": "w373", "text": "Masturbation." },
-    { "id": "w374", "text": "Three wolf moon." },
-    { "id": "w375", "text": "A jar of bees." },
-    { "id": "w376", "text": "Swallowing the evidence." },
-    { "id": "w377", "text": "The creamy white goodness of milk." },
-    { "id": "w378", "text": "Gaping anuses." },
-    { "id": "w379", "text": "Strained analogies." },
-    { "id": "w380", "text": "Waiting your whole life for your ship to come in." },
-    { "id": "w381", "text": "The clap." },
-    { "id": "w382", "text": "Not using enough lube." },
-    { "id": "w383", "text": "A series of beeps and boops." },
-    { "id": "w384", "text": "Using a body as fertiliser." },
-    { "id": "w385", "text": "Forgetting to wash your hands." },
-    { "id": "w386", "text": "Oompa Loompas." },
-    { "id": "w387", "text": "Getting so drunk you pee yourself." },
-    { "id": "w388", "text": "The gentle lapping of waves at the seashore." },
-    { "id": "w389", "text": "BATMAN!!!" },
-    { "id": "w390", "text": "A whole new world." },
-    { "id": "w391", "text": "Learning about the birds and the bees." },
-    { "id": "w392", "text": "One glass of punch." },
-    { "id": "w393", "text": "Going ape-shit on someone." },
-    { "id": "w394", "text": "A world without men." },
-    { "id": "w395", "text": "Peeing into a pool." },
-    { "id": "w396", "text": "Death by snoo-snoo." },
-    { "id": "w397", "text": "Pixelated celebrity genitalia." },
-    { "id": "w398", "text": "A delicious peach." },
-    { "id": "w399", "text": "Giving a rusty trombone." },
-    { "id": "w400", "text": "Being black." },
-    { "id": "w401", "text": "My humps." },
-    { "id": "w402", "text": "Wet sand." },
-    { "id": "w403", "text": "A dolphin's smile." },
-    { "id": "w404", "text": "A finger in the bum." },
-    { "id": "w405", "text": "Seeing a gingerbread house in the forest and thinking, 'For real?'" },
-    { "id": "w406", "text": "Skipping down the street." },
-    { "id": "w407", "text": "Big black dicks." },
-    { "id": "w408", "text": "Michael Jordan's retirement from basketball." },
-    { "id": "w409", "text": "Going to a Taylor Swift concert alone." },
-    { "id": "w410", "text": "Blacking out." },
-    { "id": "w411", "text": "Not having friends." },
-    { "id": "w412", "text": "A trip to the moon." },
-    { "id": "w413", "text": "Being mean to someone for a laugh." },
-    { "id": "w414", "text": "Masturbating into a copy of the Bible." },
-    { "id": "w415", "text": "Forgetting someone's name." },
-    { "id": "w416", "text": "A fat child getting stuck in a slide." },
-    { "id": "w417", "text": "A big pile of shit." },
-    { "id": "w418", "text": "Being a Furry." },
-    { "id": "w419", "text": "Setting the record for most consecutive days of sadness." },
-    { "id": "w420", "text": "The hardest part of a Ph.D." },
-    { "id": "w421", "text": "One-sided love." },
-    { "id": "w422", "text": "Something that never gets old." },
-    { "id": "w423", "text": "Loving yourself." },
-    { "id": "w424", "text": "The ghost of Ronald Reagan." },
-    { "id": "w425", "text": "Using sex to solve problems." },
-    { "id": "w426", "text": "The soul train." },
-    { "id": "w427", "text": "Putting things up your butt." },
-    { "id": "w428", "text": "Pulling out." },
-    { "id": "w429", "text": "Cutting off your own hand." },
-    { "id": "w430", "text": "Being responsible." },
-    { "id": "w431", "text": "Just the tip." },
-    { "id": "w432", "text": "Sleeping in." },
-    { "id": "w433", "text": "My dog's balls." },
-    { "id": "w434", "text": "Being kicked out of the country." },
-    { "id": "w435", "text": "Using your mind for evil." },
-    { "id": "w436", "text": "Grinding on someone without their consent." },
-    { "id": "w437", "text": "A beautiful face." },
-    { "id": "w438", "text": "Boobs." },
-    { "id": "w439", "text": "Making someone's childhood vaguely unsettling." },
-    { "id": "w440", "text": "A spooky ghost." },
-    { "id": "w441", "text": "Bono." },
-    { "id": "w442", "text": "Extreme body horror." },
-    { "id": "w443", "text": "The feeling of sand between your toes." },
-    { "id": "w444", "text": "Taking off the condom halfway through." },
-    { "id": "w445", "text": "Getting drunk on a school night." },
-    { "id": "w446", "text": "A time paradox." },
-    { "id": "w447", "text": "A butt plug shaped like Franklin D. Roosevelt." },
-    { "id": "w448", "text": "Pretending not to notice." },
-    { "id": "w449", "text": "The placebo effect." },
-    { "id": "w450", "text": "Taking off your pants." },
-    { "id": "w451", "text": "Cruelty." },
-    { "id": "w452", "text": "Me time." },
-    { "id": "w453", "text": "Forgetting everything." },
-    { "id": "w454", "text": "The American flag." },
-    { "id": "w455", "text": "Firing all the missiles." },
-    { "id": "w456", "text": "Chunks from a fresh bag of M&Ms." },
-    { "id": "w457", "text": "Looking like you are asleep but actually being dead." },
-    { "id": "w458", "text": "Smiling politely." },
-    { "id": "w459", "text": "A terrible medical decision." },
-    { "id": "w460", "text": "Unlimited power." }
+    {
+      "id": "3wu3ibwwqbf9",
+      "text": "A disappointing birthday party."
+    },
+    {
+      "id": "ncqek303vkoy",
+      "text": "A sassy black woman."
+    },
+    {
+      "id": "gefqyy0sd612",
+      "text": "Pretending to care."
+    },
+    {
+      "id": "peev4ske7qju",
+      "text": "The weird feeling you get when someone is clearly lying."
+    },
+    {
+      "id": "76msjyfhdgyz",
+      "text": "Alcoholism."
+    },
+    {
+      "id": "942viam689wl",
+      "text": "Passive-aggressive Post-it notes."
+    },
+    {
+      "id": "lx85lc9s3i8l",
+      "text": "A subscription to your enemies' problems."
+    },
+    {
+      "id": "7g4pzatj4xzc",
+      "text": "Racially-biased standardized tests."
+    },
+    {
+      "id": "zud8ar2kx7ba",
+      "text": "Being on fire."
+    },
+    {
+      "id": "a6ypja4tj8ns",
+      "text": "Genital to genital contact."
+    },
+    {
+      "id": "nyxo11jlk2go",
+      "text": "White privilege."
+    },
+    {
+      "id": "62d54eblckd0",
+      "text": "Hope."
+    },
+    {
+      "id": "vufx7j3rgcbc",
+      "text": "Frolicking."
+    },
+    {
+      "id": "r9gatn96cno3",
+      "text": "Inappropriate yelling."
+    },
+    {
+      "id": "xqyot5klgjdo",
+      "text": "Authentic Mexican flavour."
+    },
+    {
+      "id": "mwv4boceaxa5",
+      "text": "Ronald McDonald."
+    },
+    {
+      "id": "62ubm641pav1",
+      "text": "Explosions."
+    },
+    {
+      "id": "9nrzgbrwz09l",
+      "text": "The female orgasm."
+    },
+    {
+      "id": "esqyplii0u0v",
+      "text": "Chunks."
+    },
+    {
+      "id": "7pwicwko4fb6",
+      "text": "Mr. Clean."
+    },
+    {
+      "id": "e82ioiu5xmgc",
+      "text": "A cooler full of organs."
+    },
+    {
+      "id": "9y8uxjb1vheh",
+      "text": "The class pet."
+    },
+    {
+      "id": "ujr9gq9n6d05",
+      "text": "An honest answer."
+    },
+    {
+      "id": "ik6gf1bvz38e",
+      "text": "Nipple blades."
+    },
+    {
+      "id": "1lb4e1b0ixr7",
+      "text": "Vigorous jazz hands."
+    },
+    {
+      "id": "s6qgxxjwumnp",
+      "text": "Poverty."
+    },
+    {
+      "id": "356hckiyzsdc",
+      "text": "Classist undertones."
+    },
+    {
+      "id": "o2kw8n4t9jfw",
+      "text": "Fifty years of true love."
+    },
+    {
+      "id": "b3q247gwimn2",
+      "text": "One thousand Slim Shadys."
+    },
+    {
+      "id": "mry4humbu83a",
+      "text": "Waking up half-naked in a Denny's parking lot."
+    },
+    {
+      "id": "nx82tqence45",
+      "text": "Finger-banging."
+    },
+    {
+      "id": "9si222o4my76",
+      "text": "Estrogen."
+    },
+    {
+      "id": "wk19i4jlpm0o",
+      "text": "Foreskin."
+    },
+    {
+      "id": "el0nx9vy3c2j",
+      "text": "The inevitable heat death of the universe."
+    },
+    {
+      "id": "ai34an75x91r",
+      "text": "Science."
+    },
+    {
+      "id": "g7l5h5fxldl0",
+      "text": "A really cool hat."
+    },
+    {
+      "id": "hj7istwnnwy1",
+      "text": "Eating all of the cookies before the rest of the family gets home."
+    },
+    {
+      "id": "qrkfej64ub8b",
+      "text": "Bees?"
+    },
+    {
+      "id": "0jskkmjg3qz4",
+      "text": "German dungeon porn."
+    },
+    {
+      "id": "m1ytnb04o3xi",
+      "text": "Swiftly achieving orgasm."
+    },
+    {
+      "id": "ywuj0x1bn7cr",
+      "text": "Flying sex snakes."
+    },
+    {
+      "id": "7kshzfsv3wb1",
+      "text": "Ethnic cleansing."
+    },
+    {
+      "id": "dx6dqyujanva",
+      "text": "Natural lube."
+    },
+    {
+      "id": "abm100zot62t",
+      "text": "Powerful thighs."
+    },
+    {
+      "id": "dwrgm9tq3bec",
+      "text": "The whole Mormon thing."
+    },
+    {
+      "id": "9wfvixdok3iu",
+      "text": "The shambling corpse of Larry King."
+    },
+    {
+      "id": "0k62442nw338",
+      "text": "Praying the gay away."
+    },
+    {
+      "id": "hrxap1kyd5gr",
+      "text": "Getting paid."
+    },
+    {
+      "id": "zjgclvdsxzpt",
+      "text": "Menstruation."
+    },
+    {
+      "id": "ujz4rx0lnzg3",
+      "text": "Repression."
+    },
+    {
+      "id": "jlyqf7r8fuxm",
+      "text": "My first period."
+    },
+    {
+      "id": "vhcon4j4iq8b",
+      "text": "Dry anal."
+    },
+    {
+      "id": "ibvzk428judw",
+      "text": "Public masturbation."
+    },
+    {
+      "id": "k1jzk3nmu41y",
+      "text": "Horse-sized ducks."
+    },
+    {
+      "id": "m48cg0014sqn",
+      "text": "Being a dinosaur."
+    },
+    {
+      "id": "nytaihas9kdc",
+      "text": "Republicans."
+    },
+    {
+      "id": "cbpn20bwgw7p",
+      "text": "Dead parents."
+    },
+    {
+      "id": "e74ln2tae3sb",
+      "text": "Puppies!"
+    },
+    {
+      "id": "cmxt0iup0o10",
+      "text": "Leprosy."
+    },
+    {
+      "id": "0bnkxu4dnesr",
+      "text": "The situation in the Middle East."
+    },
+    {
+      "id": "vwthv0vuvina",
+      "text": "Smallpox blankets."
+    },
+    {
+      "id": "cvuumswzp2mw",
+      "text": "Unsubstantiated medical advice."
+    },
+    {
+      "id": "qleybt63o9me",
+      "text": "Sean Connery."
+    },
+    {
+      "id": "owa2p3tfmt4e",
+      "text": "Living in a dream world."
+    },
+    {
+      "id": "hrarsvh6nwq8",
+      "text": "Literally getting away with murder."
+    },
+    {
+      "id": "u9j2wxdmc2z5",
+      "text": "Dick Cheney."
+    },
+    {
+      "id": "5omr1chv0q3x",
+      "text": "Teaching your dog to say 'I love you'."
+    },
+    {
+      "id": "5p6iky90e7fs",
+      "text": "Heteronormativity."
+    },
+    {
+      "id": "lpnl82ic03y3",
+      "text": "Lactation."
+    },
+    {
+      "id": "akqo6edtv7ne",
+      "text": "God."
+    },
+    {
+      "id": "vomf2w1i40s5",
+      "text": "Her Majesty, Queen Elizabeth II."
+    },
+    {
+      "id": "v65krdbeznqd",
+      "text": "The total and complete loss of hope."
+    },
+    {
+      "id": "ptrtfvmhz6qz",
+      "text": "Taking a ramen noodle bath."
+    },
+    {
+      "id": "yse5q1w36mm3",
+      "text": "Flesh-eating bacteria."
+    },
+    {
+      "id": "7pjyjbiyhg54",
+      "text": "Heterosexual privilege."
+    },
+    {
+      "id": "duk8fc45v4fr",
+      "text": "Masturbating into a pool of tears."
+    },
+    {
+      "id": "usvt492ftk7c",
+      "text": "The glass ceiling."
+    },
+    {
+      "id": "e03iuwgsrkve",
+      "text": "Winking at old people."
+    },
+    {
+      "id": "8rr3jrtdvddf",
+      "text": "Being rich."
+    },
+    {
+      "id": "9h1y328634ps",
+      "text": "Eating ice cream alone in the dark."
+    },
+    {
+      "id": "i6d58bojafkt",
+      "text": "Two midgets trying to get into a car."
+    },
+    {
+      "id": "elglespd3xr2",
+      "text": "Surprise sex!"
+    },
+    {
+      "id": "k6109tkzuw43",
+      "text": "The look on my dog's face when he smells another dog's butthole."
+    },
+    {
+      "id": "dsq98jp1ryl6",
+      "text": "Tossing the first stone."
+    },
+    {
+      "id": "srg1n3zfn7ii",
+      "text": "Dying."
+    },
+    {
+      "id": "s9gwf8d1tm8f",
+      "text": "Waiting until marriage."
+    },
+    {
+      "id": "oer0hm4g413g",
+      "text": "Being creepily nice."
+    },
+    {
+      "id": "8tqxyxo6i839",
+      "text": "Cheating in the Special Olympics."
+    },
+    {
+      "id": "bf728x83ycvs",
+      "text": "Pretending to orgasm."
+    },
+    {
+      "id": "aec969mjx8dx",
+      "text": "A really strong orgasm."
+    },
+    {
+      "id": "hcmdjx73fqfx",
+      "text": "An erection that lasts longer than four hours."
+    },
+    {
+      "id": "4914leyd7144",
+      "text": "Jibber-jabber."
+    },
+    {
+      "id": "1wp7oyxwo2n3",
+      "text": "Getting drunk on mouthwash."
+    },
+    {
+      "id": "s3wro44hnfn4",
+      "text": "A detailed note on how to make a bomb."
+    },
+    {
+      "id": "mhog4q8erdlh",
+      "text": "An old man's soupçon of dignity."
+    },
+    {
+      "id": "4oljsn8k2yds",
+      "text": "My manservant, Claude."
+    },
+    {
+      "id": "r1pu64pg3y0m",
+      "text": "A tiny horse."
+    },
+    {
+      "id": "mccnjxdj1n5p",
+      "text": "My ex-wife's alimony payments."
+    },
+    {
+      "id": "ekd9t1hlz5xq",
+      "text": "Nicolas Cage."
+    },
+    {
+      "id": "hkrgkpu3eywi",
+      "text": "Forgetting to take the baby out of the car."
+    },
+    {
+      "id": "cnjto7zllyuo",
+      "text": "Racism."
+    },
+    {
+      "id": "yom9pymur7n6",
+      "text": "A windmill full of corpses."
+    },
+    {
+      "id": "5u48jd3bm9g9",
+      "text": "Nunchucks."
+    },
+    {
+      "id": "z0rqxrcbp7bk",
+      "text": "Assless chaps."
+    },
+    {
+      "id": "lx2flufk9pa9",
+      "text": "The musk of a Viking warrior."
+    },
+    {
+      "id": "ljjuozpkz5vv",
+      "text": "Passive-aggression."
+    },
+    {
+      "id": "qnd2h3j3nm1s",
+      "text": "A sweet ass."
+    },
+    {
+      "id": "8iegyl7en8co",
+      "text": "The Hamburglar."
+    },
+    {
+      "id": "ygfra417yffh",
+      "text": "A home circumcision kit."
+    },
+    {
+      "id": "hlmhu3dpembs",
+      "text": "A falcon with a cap on."
+    },
+    {
+      "id": "z0gkswirmh4x",
+      "text": "The heart of a child."
+    },
+    {
+      "id": "8w1ooar1n6cs",
+      "text": "Oomph."
+    },
+    {
+      "id": "pj5lzvbdjewv",
+      "text": "Nickelback."
+    },
+    {
+      "id": "mmlxbt6u7g4r",
+      "text": "Meth."
+    },
+    {
+      "id": "di5x83v9so6b",
+      "text": "A bag of magic beans."
+    },
+    {
+      "id": "2ncj763gp135",
+      "text": "Sexy pillow fights."
+    },
+    {
+      "id": "bxtahqp4up7q",
+      "text": "Count Chocula."
+    },
+    {
+      "id": "01ugnrua640o",
+      "text": "Lance Armstrong's missing testicle."
+    },
+    {
+      "id": "908j0pk2grq3",
+      "text": "Amputees."
+    },
+    {
+      "id": "n41u9hbqxmem",
+      "text": "A snapping turtle biting the tip of your penis."
+    },
+    {
+      "id": "nsv9bjc2bf0n",
+      "text": "Dead babies."
+    },
+    {
+      "id": "e4iww4b6s2mr",
+      "text": "Not giving a shit about the Third World."
+    },
+    {
+      "id": "47rkw5fp0c6f",
+      "text": "The Big Bang."
+    },
+    {
+      "id": "s5r4gr8mlkhk",
+      "text": "My relationship with Jesus."
+    },
+    {
+      "id": "k6wpbq96b6jw",
+      "text": "Firing a man cannon."
+    },
+    {
+      "id": "j7o9d0xz0zvp",
+      "text": "Funky-smelling nipples."
+    },
+    {
+      "id": "1wvbaxuj8o11",
+      "text": "Warlords."
+    },
+    {
+      "id": "tincvq8jirce",
+      "text": "Poorly-timed Holocaust jokes."
+    },
+    {
+      "id": "41g4gjvqy2fh",
+      "text": "Jews."
+    },
+    {
+      "id": "6xalzus27gqn",
+      "text": "Exactly what you'd expect."
+    },
+    {
+      "id": "kkoi5zax6wp3",
+      "text": "Waiting until she's asleep."
+    },
+    {
+      "id": "626m336p38w1",
+      "text": "Syphilis."
+    },
+    {
+      "id": "4ojbqygybity",
+      "text": "Hormone therapy."
+    },
+    {
+      "id": "sp3wfqkp5zfi",
+      "text": "A fetus."
+    },
+    {
+      "id": "g27w0ha7e5j4",
+      "text": "The Trail of Tears."
+    },
+    {
+      "id": "w6u1hlgtdl7d",
+      "text": "Getting really high and learning to jump-start a car."
+    },
+    {
+      "id": "lijcnbdiz19p",
+      "text": "My inner demons."
+    },
+    {
+      "id": "bwtxtsqihym3",
+      "text": "Letting yourself go."
+    },
+    {
+      "id": "p43q8n4ap72d",
+      "text": "Genital warts."
+    },
+    {
+      "id": "2seels7aprgw",
+      "text": "Barack Obama."
+    },
+    {
+      "id": "uq9xa47aysyy",
+      "text": "Sweet, sweet vengeance."
+    },
+    {
+      "id": "a89etguo162r",
+      "text": "A balanced breakfast."
+    },
+    {
+      "id": "00ugn760j0rb",
+      "text": "Extremely tight pants."
+    },
+    {
+      "id": "n3etf6rhxdie",
+      "text": "Being a dragon."
+    },
+    {
+      "id": "ab7zoeyj4h60",
+      "text": "A really mediocre guy."
+    },
+    {
+      "id": "glv0qh9yf39t",
+      "text": "Whatever the Germans have instead of schadenfreude."
+    },
+    {
+      "id": "w7zwevyw24wr",
+      "text": "The patriarchy."
+    },
+    {
+      "id": "mni4xvgmp6m2",
+      "text": "My collection of high-quality pornography."
+    },
+    {
+      "id": "e7hbycpx47v0",
+      "text": "A gyrating pelvis."
+    },
+    {
+      "id": "z1cyt2ov7kfe",
+      "text": "Eating the last piece without asking."
+    },
+    {
+      "id": "h7ur35cc10q7",
+      "text": "Not wearing a condom."
+    },
+    {
+      "id": "8o6n81fr762e",
+      "text": "Warm, velvety mink."
+    },
+    {
+      "id": "mg14ixytpwf3",
+      "text": "The harsh light of day."
+    },
+    {
+      "id": "6jpuh0iy4b1k",
+      "text": "Glenn Beck's tears."
+    },
+    {
+      "id": "8qmmtfdkshrs",
+      "text": "Being marginalized."
+    },
+    {
+      "id": "ws4vmq1v4po2",
+      "text": "A leprechaun smoking a cigar on a throne of gold."
+    },
+    {
+      "id": "dpts41f8uylw",
+      "text": "A flaming bag of dog shit."
+    },
+    {
+      "id": "qee4dd0vm4j1",
+      "text": "Growing up without a father."
+    },
+    {
+      "id": "118gotwosjyl",
+      "text": "Old people smell."
+    },
+    {
+      "id": "vqa5ybp8neam",
+      "text": "Making a friend."
+    },
+    {
+      "id": "8u98zlthc2w8",
+      "text": "Turning into a sausage."
+    },
+    {
+      "id": "r4zqlz67ks4o",
+      "text": "Picking up a dog poo with your bare hand."
+    },
+    {
+      "id": "k1clcdh8a3gx",
+      "text": "Accidentally pooping."
+    },
+    {
+      "id": "vnv2va4jriy1",
+      "text": "Punching a hole through the moon."
+    },
+    {
+      "id": "tn9ckbqk3wy8",
+      "text": "The Jews."
+    },
+    {
+      "id": "al2gmlqfmdm0",
+      "text": "AIDS."
+    },
+    {
+      "id": "q838hj4256j3",
+      "text": "A time machine that only goes to the worst historical periods."
+    },
+    {
+      "id": "d5fhri3zqieq",
+      "text": "Inserting a _____ into a _____."
+    },
+    {
+      "id": "3qj908s1cdq5",
+      "text": "The experience of going to Applebee's."
+    },
+    {
+      "id": "fqkumjv8wqbk",
+      "text": "Using one eye to look into the past and one to see the future."
+    },
+    {
+      "id": "efotj7zhdm61",
+      "text": "Chunks of a dead prostitute."
+    },
+    {
+      "id": "untk728yrj76",
+      "text": "Feeding Bibles to the homeless."
+    },
+    {
+      "id": "so7u2z3nix4p",
+      "text": "Copping a feel."
+    },
+    {
+      "id": "ccz158qoetwt",
+      "text": "A Bulbasaur."
+    },
+    {
+      "id": "xrgjh3qx9znw",
+      "text": "The American Dream."
+    },
+    {
+      "id": "06zu81i6y3rl",
+      "text": "A really sloppy Joe."
+    },
+    {
+      "id": "tyyg9hw3cmib",
+      "text": "The terrorists."
+    },
+    {
+      "id": "jc02zob2rgw4",
+      "text": "Wasting entire days on the internet."
+    },
+    {
+      "id": "t4onreljonqw",
+      "text": "Sexy, sexy robots."
+    },
+    {
+      "id": "2s5tx9f8iexn",
+      "text": "Rehab."
+    },
+    {
+      "id": "paqgeyi7nt9s",
+      "text": "A fat man in a Speedo."
+    },
+    {
+      "id": "na541y7r94v8",
+      "text": "Emotional baggage."
+    },
+    {
+      "id": "zobxeb24dqjm",
+      "text": "Running away from my problems."
+    },
+    {
+      "id": "4s7i0f9wxtri",
+      "text": "Unfathomable stupidity."
+    },
+    {
+      "id": "72looq26m30z",
+      "text": "Skeletons that can dance."
+    },
+    {
+      "id": "w9ho9z2yeeoz",
+      "text": "Edible underpants."
+    },
+    {
+      "id": "2nqm4p3bjd6x",
+      "text": "A giant, steaming pile of bingo cards."
+    },
+    {
+      "id": "lpm5o6cq4gsv",
+      "text": "An Oedipus complex."
+    },
+    {
+      "id": "phfoaxowzkf2",
+      "text": "Being Jewish."
+    },
+    {
+      "id": "ztgxssmaduku",
+      "text": "When you forget the safeword."
+    },
+    {
+      "id": "qbsgv6pr50j3",
+      "text": "The dark arts."
+    },
+    {
+      "id": "0ulg6kii8yh3",
+      "text": "Insincere apologies."
+    },
+    {
+      "id": "7nxpyza8ntp1",
+      "text": "Lunchables."
+    },
+    {
+      "id": "0zaaxivvll61",
+      "text": "A dog in a bee costume."
+    },
+    {
+      "id": "5pd72elx4jk7",
+      "text": "Pooping back and forth forever."
+    },
+    {
+      "id": "vx8in2bjoo4a",
+      "text": "Poorly-executed foreplay."
+    },
+    {
+      "id": "lgjafpew3vb9",
+      "text": "Tasteful sideboob."
+    },
+    {
+      "id": "rj05dqq9sszw",
+      "text": "Catastrophic urethral failure."
+    },
+    {
+      "id": "vwch99g1g8k7",
+      "text": "All of this blood."
+    },
+    {
+      "id": "hdm5gwdspiky",
+      "text": "The taint, the grundle, the grundulum."
+    },
+    {
+      "id": "6irczetd3q41",
+      "text": "Auschwitz."
+    },
+    {
+      "id": "ufmfjurbs3a1",
+      "text": "Pubic hair."
+    },
+    {
+      "id": "c1a40d7ei0vm",
+      "text": "A cartoon caricature of a black person."
+    },
+    {
+      "id": "u495z50latro",
+      "text": "Spontaneous human combustion."
+    },
+    {
+      "id": "o1i2m9m9spgc",
+      "text": "A lifetime of sadness."
+    },
+    {
+      "id": "jqr23ikvwmiz",
+      "text": "A face full of crazy."
+    },
+    {
+      "id": "modvcag3b41r",
+      "text": "Tentacle porn."
+    },
+    {
+      "id": "697nbhsvgpcg",
+      "text": "Throwing a virgin into a volcano."
+    },
+    {
+      "id": "1af4wig1yukx",
+      "text": "A majestic eagle."
+    },
+    {
+      "id": "6y8t7gkmvget",
+      "text": "What Jesus would have done."
+    },
+    {
+      "id": "nba9fkiiwzcn",
+      "text": "A bleached asshole."
+    },
+    {
+      "id": "x9ihyw7dtcu2",
+      "text": "Silence."
+    },
+    {
+      "id": "d05ypppzzzds",
+      "text": "William Shatner."
+    },
+    {
+      "id": "8ur0bb8uvu8c",
+      "text": "Dry heaving."
+    },
+    {
+      "id": "s77n3pd0351e",
+      "text": "A monkey driving a truck."
+    },
+    {
+      "id": "itajs6965j3y",
+      "text": "Slowly giving up."
+    },
+    {
+      "id": "l23lh90hm0mv",
+      "text": "Date rape."
+    },
+    {
+      "id": "ri2ox26tpd96",
+      "text": "Men."
+    },
+    {
+      "id": "hiqu3v76ls7t",
+      "text": "Vigorous masturbation."
+    },
+    {
+      "id": "gm1brvsfm22f",
+      "text": "The profoundly handicapped."
+    },
+    {
+      "id": "x01xferla1zv",
+      "text": "A syringe of Axe body spray."
+    },
+    {
+      "id": "605oigu7f5od",
+      "text": "Explosive diarrhea."
+    },
+    {
+      "id": "hokpe8lqpfgk",
+      "text": "The clitoris."
+    },
+    {
+      "id": "yltllp7lmjii",
+      "text": "Queefing."
+    },
+    {
+      "id": "w9f49jw4ym8o",
+      "text": "Being sexually attracted to Batman."
+    },
+    {
+      "id": "d3qfeffns5wt",
+      "text": "Chainsaws for hands."
+    },
+    {
+      "id": "l4p19apofmqf",
+      "text": "The true nature of the universe."
+    },
+    {
+      "id": "pqt3khlfnuqd",
+      "text": "A disappointing son."
+    },
+    {
+      "id": "hcenytpo536q",
+      "text": "Being fat and stupid."
+    },
+    {
+      "id": "6fj7oopvheow",
+      "text": "Overcompensation."
+    },
+    {
+      "id": "l40putw7vkvj",
+      "text": "The miracle of childbirth."
+    },
+    {
+      "id": "kyznrsr9zmqz",
+      "text": "Forgetting to use a condom."
+    },
+    {
+      "id": "0gdwqv1tskzp",
+      "text": "Stabbing someone."
+    },
+    {
+      "id": "ckirdjts2vmh",
+      "text": "Battered Spouse Syndrome."
+    },
+    {
+      "id": "y6lpva1de07a",
+      "text": "Oppression."
+    },
+    {
+      "id": "hr79it2yrvbk",
+      "text": "The hardworking genitalia of Mexican immigrants."
+    },
+    {
+      "id": "yusv7dksoqrw",
+      "text": "Surprise buttsex."
+    },
+    {
+      "id": "o2xfb7cxyxvg",
+      "text": "Bitches."
+    },
+    {
+      "id": "qyq0rfb6m3i4",
+      "text": "A gentle caress."
+    },
+    {
+      "id": "0j5heju2bjxe",
+      "text": "Fiery poops."
+    },
+    {
+      "id": "c4jhqjer8pxq",
+      "text": "Dying alone."
+    },
+    {
+      "id": "ktd3e21jw4tt",
+      "text": "Hot cheese."
+    },
+    {
+      "id": "54o227gph8es",
+      "text": "Making a baby cry."
+    },
+    {
+      "id": "w0qxxifckro0",
+      "text": "The Pope."
+    },
+    {
+      "id": "ho0vk33lm6g7",
+      "text": "A picture of your genitals."
+    },
+    {
+      "id": "ogfx35kmpxzz",
+      "text": "Involuntary erections."
+    },
+    {
+      "id": "0olnwima1kih",
+      "text": "The invisible hand of the free market."
+    },
+    {
+      "id": "nn4yvbf0tbky",
+      "text": "An intimate dinner for two."
+    },
+    {
+      "id": "nahurvjfkuz5",
+      "text": "A tiny, hilariously-large phone."
+    },
+    {
+      "id": "0pmzby51n0yg",
+      "text": "The hard-knock life."
+    },
+    {
+      "id": "cbx18vxortoe",
+      "text": "Not reciprocating oral sex."
+    },
+    {
+      "id": "d87o6e4837uy",
+      "text": "Crystal meth."
+    },
+    {
+      "id": "2lf9q9m1lxz6",
+      "text": "Friends who eat all your food."
+    },
+    {
+      "id": "9znnh9js12f3",
+      "text": "The violation of our most basic human rights."
+    },
+    {
+      "id": "kjvlqx4lmwuf",
+      "text": "A can of whoop-ass."
+    },
+    {
+      "id": "kkcjl8s2sp8x",
+      "text": "Seductive eyebrows."
+    },
+    {
+      "id": "yed2th966w48",
+      "text": "Getting drunk on a Tuesday."
+    },
+    {
+      "id": "pzs67pr18vhf",
+      "text": "Prancing."
+    },
+    {
+      "id": "2s3o1784f6uo",
+      "text": "Dying of dysentery."
+    },
+    {
+      "id": "dlqfa1pejdmf",
+      "text": "My collection of foreign stamps."
+    },
+    {
+      "id": "pbou39tkih7f",
+      "text": "Googling 'what is a clitoris'."
+    },
+    {
+      "id": "6v6do6nsjnub",
+      "text": "An enormous amount of cocaine."
+    },
+    {
+      "id": "kbyu5llxh1yq",
+      "text": "A death ray."
+    },
+    {
+      "id": "ia0tqswwk921",
+      "text": "Murdering a hobo."
+    },
+    {
+      "id": "z283tcydei4m",
+      "text": "The number of people I've slept with."
+    },
+    {
+      "id": "3f8oxjtkv46h",
+      "text": "Sticking a needle in your arm."
+    },
+    {
+      "id": "1bae45050oqo",
+      "text": "Making a woman sad."
+    },
+    {
+      "id": "4kbtcliscrud",
+      "text": "Holding down a girl."
+    },
+    {
+      "id": "j45npycu28qb",
+      "text": "Smegma."
+    },
+    {
+      "id": "1ppjcmf9779v",
+      "text": "Getting so angry you can't speak."
+    },
+    {
+      "id": "l05b47901o2k",
+      "text": "Sharing needles."
+    },
+    {
+      "id": "cvvn8k7p87sk",
+      "text": "A giant robot penis."
+    },
+    {
+      "id": "7pa2h406v2ql",
+      "text": "The weird conversation at the end of a one-night stand."
+    },
+    {
+      "id": "h1vudlh5q8v9",
+      "text": "Accidentally reading the Bible."
+    },
+    {
+      "id": "bdh3aglh0n50",
+      "text": "Goblins."
+    },
+    {
+      "id": "ia5yp7fard8y",
+      "text": "The underground railroad."
+    },
+    {
+      "id": "hjbn1rlhrg53",
+      "text": "The blood of our enemies."
+    },
+    {
+      "id": "c9bbwsm5gqa1",
+      "text": "Fisting."
+    },
+    {
+      "id": "5221s8wi54ea",
+      "text": "The tears of a clown."
+    },
+    {
+      "id": "s4fd7nbqtmfn",
+      "text": "Being the little spoon."
+    },
+    {
+      "id": "3f33zlloukgh",
+      "text": "The life-giving power of the Sun."
+    },
+    {
+      "id": "h0qp05kqjok9",
+      "text": "Drinking alone."
+    },
+    {
+      "id": "jcy2kg6thr03",
+      "text": "Falling in love."
+    },
+    {
+      "id": "ff88554uvo6q",
+      "text": "Teaching a horse to cheat at poker."
+    },
+    {
+      "id": "9iw2fzkdzxp4",
+      "text": "The cool parts of the Bible."
+    },
+    {
+      "id": "uexicqmeezgr",
+      "text": "A really good lawyer."
+    },
+    {
+      "id": "41aqwllw3ic1",
+      "text": "Churning butter."
+    },
+    {
+      "id": "zuvsip7a2g0f",
+      "text": "Feelings."
+    },
+    {
+      "id": "w1si1c8idkek",
+      "text": "Apologizing."
+    },
+    {
+      "id": "osfgbbsni4gj",
+      "text": "The big one."
+    },
+    {
+      "id": "2iz6s8n5crol",
+      "text": "My sex face."
+    },
+    {
+      "id": "kk0hf6v69zw0",
+      "text": "Peeing a little bit."
+    },
+    {
+      "id": "q1vwmad7n3sf",
+      "text": "Waking up and forgetting where I am."
+    },
+    {
+      "id": "4p8l7qn165a2",
+      "text": "Old-people sex."
+    },
+    {
+      "id": "h6oa5y8rhsnu",
+      "text": "A fleshlight."
+    },
+    {
+      "id": "umwwce88u780",
+      "text": "Children on leashes."
+    },
+    {
+      "id": "zhht9xb121s1",
+      "text": "Tying the knot."
+    },
+    {
+      "id": "tmjaaaatfep3",
+      "text": "A box of kittens."
+    },
+    {
+      "id": "69j986rdrik4",
+      "text": "An unhappy ending."
+    },
+    {
+      "id": "98bmgtyj3dg2",
+      "text": "Human rights violations."
+    },
+    {
+      "id": "vcjy6nj18rwc",
+      "text": "Throwing up into someone's hair."
+    },
+    {
+      "id": "nijy9ukzf8jb",
+      "text": "Getting fingered by Edward Scissorhands."
+    },
+    {
+      "id": "bqaxwqt1905e",
+      "text": "The gays."
+    },
+    {
+      "id": "16ewpywpbnwh",
+      "text": "Doing the right thing."
+    },
+    {
+      "id": "yunpwn0vnf8z",
+      "text": "A poodle of some kind."
+    },
+    {
+      "id": "p6nz8m19nh2x",
+      "text": "The last slice of pizza."
+    },
+    {
+      "id": "q8q3t07yodej",
+      "text": "A disappointed look."
+    },
+    {
+      "id": "1ev3craohpqd",
+      "text": "Getting established."
+    },
+    {
+      "id": "pilzonfgqnxd",
+      "text": "Puberty."
+    },
+    {
+      "id": "jdy5nhu41khy",
+      "text": "Crying while eating."
+    },
+    {
+      "id": "fbkv5hwqbf9b",
+      "text": "Throwing away your dreams."
+    },
+    {
+      "id": "9shmf8twesd0",
+      "text": "Seeing Mama Cass eat a ham sandwich."
+    },
+    {
+      "id": "9i91mloxtz83",
+      "text": "Former President George W. Bush."
+    },
+    {
+      "id": "q6is482tn2ui",
+      "text": "Eating all the food."
+    },
+    {
+      "id": "49m8r68jeun4",
+      "text": "Abstinence-only sex education."
+    },
+    {
+      "id": "2k51jerhdp0j",
+      "text": "Chunks of a fresh maxi-pad."
+    },
+    {
+      "id": "hva1tny8hyil",
+      "text": "A really big fork."
+    },
+    {
+      "id": "vzhr1mpx7526",
+      "text": "A baby crying."
+    },
+    {
+      "id": "yzorvzf45snl",
+      "text": "Roofies."
+    },
+    {
+      "id": "737ugxw01y7q",
+      "text": "Taking a giant dump."
+    },
+    {
+      "id": "672c27vxy0l8",
+      "text": "Holding someone down."
+    },
+    {
+      "id": "eknkjg02v7p5",
+      "text": "Jerking off into a pool of tears."
+    },
+    {
+      "id": "2k9mobga2n53",
+      "text": "The milk of human kindness."
+    },
+    {
+      "id": "0tl4ws3im5qr",
+      "text": "Hissing yourself awake."
+    },
+    {
+      "id": "o1g2k1bp9sl5",
+      "text": "A Yelp review of the Holocaust."
+    },
+    {
+      "id": "wbz6trfwp6jg",
+      "text": "A look of religious ecstasy."
+    },
+    {
+      "id": "ygr0wiuh7uq5",
+      "text": "Flesh."
+    },
+    {
+      "id": "o8g5drll212y",
+      "text": "Apologetic diarrhea."
+    },
+    {
+      "id": "aaikem15qwhr",
+      "text": "Being poor."
+    },
+    {
+      "id": "cqlw3hrmp3f3",
+      "text": "A gassy German man."
+    },
+    {
+      "id": "8tshcxb9j14a",
+      "text": "Pummelling the shit out of someone."
+    },
+    {
+      "id": "9bfvfstlvky3",
+      "text": "Balls."
+    },
+    {
+      "id": "7r7inheq6qc5",
+      "text": "Eating pussy."
+    },
+    {
+      "id": "0x7h4q0zuks0",
+      "text": "Vigorous ass-slapping."
+    },
+    {
+      "id": "yuf7mseetu98",
+      "text": "Not realising that the Holocaust was actually pretty bad."
+    },
+    {
+      "id": "du2rvxuau41h",
+      "text": "A sad orphan."
+    },
+    {
+      "id": "0bml2bmb6u2b",
+      "text": "Being on too many medications at once."
+    },
+    {
+      "id": "f0fsccfbh3fe",
+      "text": "A 55-gallon drum of lube."
+    },
+    {
+      "id": "9j5edl3klp3o",
+      "text": "Molestation."
+    },
+    {
+      "id": "czj9aoklgdc4",
+      "text": "Tom Cruise."
+    },
+    {
+      "id": "hro1pel53fx8",
+      "text": "The human body."
+    },
+    {
+      "id": "q3zd75ox1z1h",
+      "text": "Pretending to be happy."
+    },
+    {
+      "id": "lqz3bhk7767l",
+      "text": "Dead babies."
+    },
+    {
+      "id": "ln3fqlc1t4f7",
+      "text": "A sassy black woman who don't take no shit."
+    },
+    {
+      "id": "d0vxp6k7fmbi",
+      "text": "Eugenics."
+    },
+    {
+      "id": "qcyvn6kq7d7p",
+      "text": "Sneezing, farting, and orgasming at the same time."
+    },
+    {
+      "id": "0iz89h3l8loh",
+      "text": "Unprotected sex with multiple partners."
+    },
+    {
+      "id": "lx20defd4m15",
+      "text": "The moon."
+    },
+    {
+      "id": "rcb4lcb5q8w8",
+      "text": "Weeaboos."
+    },
+    {
+      "id": "ur1b85nbtm9e",
+      "text": "Multiple stab wounds."
+    },
+    {
+      "id": "2feyf35zvo1s",
+      "text": "A sewer of broken dreams."
+    },
+    {
+      "id": "bgp7bq1oi948",
+      "text": "The three R's: Reading, Writing, and Arson."
+    },
+    {
+      "id": "oiuttg2hj898",
+      "text": "Human-animal hybrids."
+    },
+    {
+      "id": "5aogynbp4cp5",
+      "text": "Pac-Man uncontrollably guzzling cum."
+    },
+    {
+      "id": "sqew29tpklcw",
+      "text": "Fiery poops."
+    },
+    {
+      "id": "jlpqbt2uh07f",
+      "text": "Eating someone's hair."
+    },
+    {
+      "id": "k1em5pbvzcfy",
+      "text": "The 72 virgins."
+    },
+    {
+      "id": "j5qemo4ylh5a",
+      "text": "Grandma's dentures."
+    },
+    {
+      "id": "6o2uatdzgxcf",
+      "text": "A beige cardigan."
+    },
+    {
+      "id": "vycdwu7p7g8r",
+      "text": "A dragon that breathes fire, and also is racist."
+    },
+    {
+      "id": "son3mxc21hlr",
+      "text": "Morgan Freeman's voice."
+    },
+    {
+      "id": "4cszrkd2q4ak",
+      "text": "Wearing a birthday suit in a non-birthday context."
+    },
+    {
+      "id": "6vuy946abi41",
+      "text": "A sad, sad man."
+    },
+    {
+      "id": "l91qzfs1maxi",
+      "text": "Ruining the sex mood with bad techno music."
+    },
+    {
+      "id": "jfi81ff565tf",
+      "text": "A tribe of warrior women."
+    },
+    {
+      "id": "glrm3gvfg9tg",
+      "text": "Not enough lube."
+    },
+    {
+      "id": "2npmwyaox874",
+      "text": "Forgetting to pull out."
+    },
+    {
+      "id": "clee14luikhm",
+      "text": "A porcupine getting a bikini wax."
+    },
+    {
+      "id": "rfi9h4vjt4h4",
+      "text": "The hardworking men and women of the armed forces."
+    },
+    {
+      "id": "48tzfqpreogx",
+      "text": "Bitchy resting face."
+    },
+    {
+      "id": "bpmigtbgeqs8",
+      "text": "Too much pie."
+    },
+    {
+      "id": "y5e4eglmrv2f",
+      "text": "Hurricane Katrina."
+    },
+    {
+      "id": "vgn0thxrxjmb",
+      "text": "Masturbation."
+    },
+    {
+      "id": "s5se0jf345su",
+      "text": "Three wolf moon."
+    },
+    {
+      "id": "krkeyth0uks9",
+      "text": "A jar of bees."
+    },
+    {
+      "id": "i4d7t87ha141",
+      "text": "Swallowing the evidence."
+    },
+    {
+      "id": "dzwzbjb6hx86",
+      "text": "The creamy white goodness of milk."
+    },
+    {
+      "id": "z6o99rrlhbn4",
+      "text": "Gaping anuses."
+    },
+    {
+      "id": "ewxeki79uvuv",
+      "text": "Strained analogies."
+    },
+    {
+      "id": "5uf1th5tpxii",
+      "text": "Waiting your whole life for your ship to come in."
+    },
+    {
+      "id": "rgp6ur973qpp",
+      "text": "The clap."
+    },
+    {
+      "id": "shq6svy0u4b3",
+      "text": "Not using enough lube."
+    },
+    {
+      "id": "h1uvjju2dmb8",
+      "text": "A series of beeps and boops."
+    },
+    {
+      "id": "u76zocoxk07q",
+      "text": "Using a body as fertiliser."
+    },
+    {
+      "id": "o1j8y8svlcxy",
+      "text": "Forgetting to wash your hands."
+    },
+    {
+      "id": "h7n1t93fhcaa",
+      "text": "Oompa Loompas."
+    },
+    {
+      "id": "wzpnr4p475g0",
+      "text": "Getting so drunk you pee yourself."
+    },
+    {
+      "id": "e4f684ob1xkg",
+      "text": "The gentle lapping of waves at the seashore."
+    },
+    {
+      "id": "xbcu971j8nvc",
+      "text": "BATMAN!!!"
+    },
+    {
+      "id": "pu9j0ag0p5mh",
+      "text": "A whole new world."
+    },
+    {
+      "id": "trxpsuqarih2",
+      "text": "Learning about the birds and the bees."
+    },
+    {
+      "id": "lg8v5xhu0hl8",
+      "text": "One glass of punch."
+    },
+    {
+      "id": "8pw26potpe9f",
+      "text": "Going ape-shit on someone."
+    },
+    {
+      "id": "8srcny6xt0gd",
+      "text": "A world without men."
+    },
+    {
+      "id": "dk5yts5fob0j",
+      "text": "Peeing into a pool."
+    },
+    {
+      "id": "e4l8htzicj73",
+      "text": "Death by snoo-snoo."
+    },
+    {
+      "id": "kuy3j0d8a7aj",
+      "text": "Pixelated celebrity genitalia."
+    },
+    {
+      "id": "zcvy63ut0nbc",
+      "text": "A delicious peach."
+    },
+    {
+      "id": "iw1mftte93o4",
+      "text": "Giving a rusty trombone."
+    },
+    {
+      "id": "pkap7z8yqtv6",
+      "text": "Being black."
+    },
+    {
+      "id": "qvhgj4aa24ia",
+      "text": "My humps."
+    },
+    {
+      "id": "1ygdf9z8org2",
+      "text": "Wet sand."
+    },
+    {
+      "id": "fngvoh4u4ftc",
+      "text": "A dolphin's smile."
+    },
+    {
+      "id": "6hmnzu69p613",
+      "text": "A finger in the bum."
+    },
+    {
+      "id": "juvaowpswude",
+      "text": "Seeing a gingerbread house in the forest and thinking, 'For real?'"
+    },
+    {
+      "id": "28m2u0cue2a2",
+      "text": "Skipping down the street."
+    },
+    {
+      "id": "hxwgy2mfmd5i",
+      "text": "Big black dicks."
+    },
+    {
+      "id": "7t1i51dngvzb",
+      "text": "Michael Jordan's retirement from basketball."
+    },
+    {
+      "id": "zp3pmuf0nn5n",
+      "text": "Going to a Taylor Swift concert alone."
+    },
+    {
+      "id": "unokktmzkd2t",
+      "text": "Blacking out."
+    },
+    {
+      "id": "adfgi0ekdhui",
+      "text": "Not having friends."
+    },
+    {
+      "id": "s6zt1rnyee52",
+      "text": "A trip to the moon."
+    },
+    {
+      "id": "amskvpmvnumx",
+      "text": "Being mean to someone for a laugh."
+    },
+    {
+      "id": "6km69s1tcyvs",
+      "text": "Masturbating into a copy of the Bible."
+    },
+    {
+      "id": "ogyi66ht8amh",
+      "text": "Forgetting someone's name."
+    },
+    {
+      "id": "ln4qw3803qyg",
+      "text": "A fat child getting stuck in a slide."
+    },
+    {
+      "id": "shz7eo9z5ffz",
+      "text": "A big pile of shit."
+    },
+    {
+      "id": "6n0nif4jaw8a",
+      "text": "Being a Furry."
+    },
+    {
+      "id": "6qchh9apl9xb",
+      "text": "Setting the record for most consecutive days of sadness."
+    },
+    {
+      "id": "1ipm3qt8msvg",
+      "text": "The hardest part of a Ph.D."
+    },
+    {
+      "id": "o5sp48pqva09",
+      "text": "One-sided love."
+    },
+    {
+      "id": "d4d279rnpqcg",
+      "text": "Something that never gets old."
+    },
+    {
+      "id": "ubivnd4ojlat",
+      "text": "Loving yourself."
+    },
+    {
+      "id": "qgh0rd5obcky",
+      "text": "The ghost of Ronald Reagan."
+    },
+    {
+      "id": "kneh5ov7axsr",
+      "text": "Using sex to solve problems."
+    },
+    {
+      "id": "s1pbs4cowwk1",
+      "text": "The soul train."
+    },
+    {
+      "id": "31y7fm508bdn",
+      "text": "Putting things up your butt."
+    },
+    {
+      "id": "rtnc7kvbfkzb",
+      "text": "Pulling out."
+    },
+    {
+      "id": "h4syn01bdly9",
+      "text": "Cutting off your own hand."
+    },
+    {
+      "id": "4syxl28whqc9",
+      "text": "Being responsible."
+    },
+    {
+      "id": "z31vft8zdq0n",
+      "text": "Just the tip."
+    },
+    {
+      "id": "teqh41vgnr6v",
+      "text": "Sleeping in."
+    },
+    {
+      "id": "6asp5wonin2r",
+      "text": "My dog's balls."
+    },
+    {
+      "id": "bzikim9xm7pz",
+      "text": "Being kicked out of the country."
+    },
+    {
+      "id": "ooclj0nu9n9w",
+      "text": "Using your mind for evil."
+    },
+    {
+      "id": "ulo2d2wvrd4b",
+      "text": "Grinding on someone without their consent."
+    },
+    {
+      "id": "x5mh8tqlzj8d",
+      "text": "A beautiful face."
+    },
+    {
+      "id": "qlo40s4dljvz",
+      "text": "Boobs."
+    },
+    {
+      "id": "ryu4mg2i0z2k",
+      "text": "Making someone's childhood vaguely unsettling."
+    },
+    {
+      "id": "ud5mevdtnyim",
+      "text": "A spooky ghost."
+    },
+    {
+      "id": "7atkv0fh2t5v",
+      "text": "Bono."
+    },
+    {
+      "id": "0alo1lslzty9",
+      "text": "Extreme body horror."
+    },
+    {
+      "id": "01sei3nvzxhf",
+      "text": "The feeling of sand between your toes."
+    },
+    {
+      "id": "jeuw8wcevatl",
+      "text": "Taking off the condom halfway through."
+    },
+    {
+      "id": "epycgsxc8cmv",
+      "text": "Getting drunk on a school night."
+    },
+    {
+      "id": "feajo6810wpo",
+      "text": "A time paradox."
+    },
+    {
+      "id": "0dhg3qb2103l",
+      "text": "A butt plug shaped like Franklin D. Roosevelt."
+    },
+    {
+      "id": "k5w19jjq0i6e",
+      "text": "Pretending not to notice."
+    },
+    {
+      "id": "nwk5c36v1a6a",
+      "text": "The placebo effect."
+    },
+    {
+      "id": "c4i35bimgexy",
+      "text": "Taking off your pants."
+    },
+    {
+      "id": "fa0mwfhxuje6",
+      "text": "Cruelty."
+    },
+    {
+      "id": "m9tgyxfzhx7v",
+      "text": "Me time."
+    },
+    {
+      "id": "abseym48arqh",
+      "text": "Forgetting everything."
+    },
+    {
+      "id": "k6c5z7ddv2r1",
+      "text": "The American flag."
+    },
+    {
+      "id": "yzidd9km3yb0",
+      "text": "Firing all the missiles."
+    },
+    {
+      "id": "v997r2te0nz4",
+      "text": "Chunks from a fresh bag of M&Ms."
+    },
+    {
+      "id": "voixnmj1zjen",
+      "text": "Looking like you are asleep but actually being dead."
+    },
+    {
+      "id": "48dw95rqo0lz",
+      "text": "Smiling politely."
+    },
+    {
+      "id": "a4xsw5qylfei",
+      "text": "A terrible medical decision."
+    },
+    {
+      "id": "gmk9hoqrjair",
+      "text": "Unlimited power."
+    }
   ]
 }
