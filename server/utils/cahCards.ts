@@ -9,6 +9,7 @@ import type { BlackCard, WhiteCard } from '../../shared/types/cah'
 
 import basePack from '../../public/cards/cah-base.json'
 import swedishPack from '../../public/cards/cah-swedish.json'
+import swedishXlPack from '../../public/cards/cah-swedish-xl.json'
 
 interface CardPack {
   pack: string
@@ -20,6 +21,7 @@ interface CardPack {
 const PACK_REGISTRY: Record<string, CardPack> = {
   base: basePack as CardPack,
   swedish: swedishPack as CardPack,
+  'swedish-xl': swedishXlPack as CardPack,
 }
 
 // ── Static pack cache ──────────────────────────────────────────────────────────

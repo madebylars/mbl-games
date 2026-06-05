@@ -111,7 +111,7 @@ onMounted(() => {
   form.language = (localStorage.getItem('cah-lang') as 'en' | 'sv') ?? 'en'
 })
 
-const packForLanguage = { en: ['base'], sv: ['swedish'] }
+const packForLanguage = { en: ['base'], sv: ['swedish', 'swedish-xl'] }
 
 const loading = ref(false)
 const error = ref('')
