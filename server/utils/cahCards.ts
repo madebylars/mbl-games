@@ -70,6 +70,7 @@ async function loadDbCards(packs: string[]): Promise<{ black: BlackCard[]; white
       .from('cah_cards')
       .select('id, pack, type, text, pick')
       .in('pack', packs)
+      .limit(10000)
 
     if (error || !data) return { black: [], white: [] }
 
