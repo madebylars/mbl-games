@@ -63,28 +63,39 @@
         </div>
 
         <div class="field">
-          <label class="label">Card pack</label>
-          <div class="toggle-row toggle-row--4">
+          <label class="label">Language</label>
+          <div class="toggle-row">
             <button
               class="toggle-btn"
-              :class="{ active: form.pack === 'en' }"
-              @click="form.pack = 'en'"
+              :class="{ active: form.lang === 'en' }"
+              @click="form.lang = 'en'"
             >🇬🇧 English</button>
             <button
               class="toggle-btn"
-              :class="{ active: form.pack === 'sv' }"
-              @click="form.pack = 'sv'"
+              :class="{ active: form.lang === 'sv' }"
+              @click="form.lang = 'sv'"
             >🇸🇪 Svenska</button>
+          </div>
+        </div>
+
+        <div v-if="form.lang === 'sv'" class="field">
+          <label class="label">Swedish pack</label>
+          <div class="toggle-row">
             <button
               class="toggle-btn"
-              :class="{ active: form.pack === 'sv-xl' }"
-              @click="form.pack = 'sv-xl'"
-            >🇸🇪 XL</button>
+              :class="{ active: form.svPack === 'sv' }"
+              @click="form.svPack = 'sv'"
+            >🇸🇪 Standard</button>
             <button
               class="toggle-btn"
-              :class="{ active: form.pack === 'sv-all' }"
-              @click="form.pack = 'sv-all'"
-            >🇸🇪 Alla</button>
+              :class="{ active: form.svPack === 'sv-xl' }"
+              @click="form.svPack = 'sv-xl'"
+            >🇸🇪<sup class="sv-badge">XL</sup> XL</button>
+            <button
+              class="toggle-btn"
+              :class="{ active: form.svPack === 'sv-all' }"
+              @click="form.svPack = 'sv-all'"
+            >🇸🇪<sup class="sv-badge">∞</sup> Alla</button>
           </div>
         </div>
 
@@ -109,26 +120,28 @@ const emit = defineEmits<{
   created: [roomId: string]
 }>()
 
-type PackKey = 'en' | 'sv' | 'sv-xl' | 'sv-all'
+type SvPack = 'sv' | 'sv-xl' | 'sv-all'
 
 const form = reactive({
   name: '',
   isPublic: true,
   pointsToWin: 8,
   maxPlayers: 10,
-  pack: 'sv-all' as PackKey,
+  lang: 'sv' as 'en' | 'sv',
+  svPack: 'sv-all' as SvPack,
 })
 
 onMounted(() => {
-  form.pack = (localStorage.getItem('cah-pack') as PackKey) ?? 'sv-all'
+  form.lang = (localStorage.getItem('cah-lang') as 'en' | 'sv') ?? 'sv'
+  form.svPack = (localStorage.getItem('cah-sv-pack') as SvPack) ?? 'sv-all'
 })
 
-const packsForKey: Record<PackKey, string[]> = {
-  'en': ['base'],
-  'sv': ['swedish'],
-  'sv-xl': ['swedish-xl'],
-  'sv-all': ['swedish', 'swedish-xl'],
-}
+const activePacks = computed(() => {
+  if (form.lang === 'en') return ['base']
+  if (form.svPack === 'sv') return ['swedish']
+  if (form.svPack === 'sv-xl') return ['swedish-xl']
+  return ['swedish', 'swedish-xl']
+})
 
 const loading = ref(false)
 const error = ref('')
@@ -139,7 +152,8 @@ async function submit() {
   loading.value = true
 
   try {
-    localStorage.setItem('cah-pack', form.pack)
+    localStorage.setItem('cah-lang', form.lang)
+    localStorage.setItem('cah-sv-pack', form.svPack)
     const data = await $fetch<{ roomId: string }>('/api/games/cah/rooms', {
       method: 'POST',
       body: {
@@ -148,7 +162,7 @@ async function submit() {
           isPublic: form.isPublic,
           pointsToWin: form.pointsToWin,
           maxPlayers: form.maxPlayers,
-          packs: packsForKey[form.pack],
+          packs: activePacks.value,
         },
         bots: 0,
       },
@@ -241,9 +255,11 @@ async function submit() {
   display: flex;
   gap: 8px;
 }
-.toggle-row--4 .toggle-btn {
-  font-size: 0.8rem;
-  padding: 9px 6px;
+.sv-badge {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #818cf8;
+  margin-left: 1px;
 }
 
 .toggle-btn {

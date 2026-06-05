@@ -40,6 +40,27 @@
         <button class="change-name" @click="nameConfirmed = false">{{ t.change }}</button>
       </div>
 
+      <div v-if="lang === 'sv'" class="sv-pack-row">
+        <button
+          class="sv-pack-btn"
+          :class="{ active: svPack === 'sv' }"
+          title="Svenska (standard)"
+          @click="setSvPack('sv')"
+        >🇸🇪</button>
+        <button
+          class="sv-pack-btn"
+          :class="{ active: svPack === 'sv-xl' }"
+          title="Svenska XL"
+          @click="setSvPack('sv-xl')"
+        >🇸🇪<sup class="sv-badge">XL</sup></button>
+        <button
+          class="sv-pack-btn"
+          :class="{ active: svPack === 'sv-all' }"
+          title="Svenska + XL"
+          @click="setSvPack('sv-all')"
+        >🇸🇪<sup class="sv-badge">∞</sup></button>
+      </div>
+
       <div class="actions">
         <button class="btn primary" @click="showCreate = true">
           ✚ {{ t.createGame }}
@@ -88,18 +109,23 @@
 import type { PublicRoomSummary } from '../../../../shared/types/core'
 
 // ── Language / pack ────────────────────────────────────────────────────────────
-type CahPack = 'en' | 'sv' | 'sv-xl' | 'sv-all'
-const cahPack = ref<CahPack>('sv-all')
+type SvPack = 'sv' | 'sv-xl' | 'sv-all'
+const lang = ref<'en' | 'sv'>('sv')
+const svPack = ref<SvPack>('sv-all')
 onMounted(() => {
-  cahPack.value = (localStorage.getItem('cah-pack') as CahPack) ?? 'sv-all'
+  lang.value = (localStorage.getItem('cah-lang') as 'en' | 'sv') ?? 'sv'
+  svPack.value = (localStorage.getItem('cah-sv-pack') as SvPack) ?? 'sv-all'
 })
-const lang = computed<'en' | 'sv'>(() => cahPack.value === 'en' ? 'en' : 'sv')
-const packsForKey: Record<CahPack, string[]> = {
-  'en': ['base'],
-  'sv': ['swedish'],
-  'sv-xl': ['swedish-xl'],
-  'sv-all': ['swedish', 'swedish-xl'],
+function setSvPack(p: SvPack) {
+  svPack.value = p
+  localStorage.setItem('cah-sv-pack', p)
 }
+const activePacks = computed(() => {
+  if (lang.value === 'en') return ['base']
+  if (svPack.value === 'sv') return ['swedish']
+  if (svPack.value === 'sv-xl') return ['swedish-xl']
+  return ['swedish', 'swedish-xl']
+})
 
 const STRINGS = {
   en: {
@@ -191,7 +217,7 @@ async function createDemo() {
           isPublic: false,
           pointsToWin: 5,
           maxPlayers: 5,
-          packs: packsForKey[cahPack.value],
+          packs: activePacks.value,
         },
         bots: 3,
       },
@@ -312,6 +338,32 @@ async function createDemo() {
 }
 .name-btn:hover:not(:disabled) { background: #a5b4fc; }
 .name-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Swedish sub-pack selector */
+.sv-pack-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.sv-pack-btn {
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 6px 10px;
+  background: #0f0f1a;
+  border: 1px solid #2d2d44;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.15s, border-color 0.15s;
+}
+.sv-pack-btn:hover { opacity: 0.75; }
+.sv-pack-btn.active { opacity: 1; border-color: #818cf8; }
+.sv-badge {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #818cf8;
+  margin-left: 1px;
+}
 
 /* Greeting */
 .greeting {
