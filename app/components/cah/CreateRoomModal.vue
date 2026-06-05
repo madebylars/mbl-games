@@ -63,18 +63,28 @@
         </div>
 
         <div class="field">
-          <label class="label">Language</label>
-          <div class="toggle-row">
+          <label class="label">Card pack</label>
+          <div class="toggle-row toggle-row--4">
             <button
               class="toggle-btn"
-              :class="{ active: form.language === 'en' }"
-              @click="form.language = 'en'"
+              :class="{ active: form.pack === 'en' }"
+              @click="form.pack = 'en'"
             >🇬🇧 English</button>
             <button
               class="toggle-btn"
-              :class="{ active: form.language === 'sv' }"
-              @click="form.language = 'sv'"
+              :class="{ active: form.pack === 'sv' }"
+              @click="form.pack = 'sv'"
             >🇸🇪 Svenska</button>
+            <button
+              class="toggle-btn"
+              :class="{ active: form.pack === 'sv-xl' }"
+              @click="form.pack = 'sv-xl'"
+            >🇸🇪 XL</button>
+            <button
+              class="toggle-btn"
+              :class="{ active: form.pack === 'sv-all' }"
+              @click="form.pack = 'sv-all'"
+            >🇸🇪 Alla</button>
           </div>
         </div>
 
@@ -99,19 +109,26 @@ const emit = defineEmits<{
   created: [roomId: string]
 }>()
 
+type PackKey = 'en' | 'sv' | 'sv-xl' | 'sv-all'
+
 const form = reactive({
   name: '',
   isPublic: true,
   pointsToWin: 8,
   maxPlayers: 10,
-  language: 'en' as 'en' | 'sv',
+  pack: 'sv-all' as PackKey,
 })
 
 onMounted(() => {
-  form.language = (localStorage.getItem('cah-lang') as 'en' | 'sv') ?? 'en'
+  form.pack = (localStorage.getItem('cah-pack') as PackKey) ?? 'sv-all'
 })
 
-const packForLanguage = { en: ['base'], sv: ['swedish', 'swedish-xl'] }
+const packsForKey: Record<PackKey, string[]> = {
+  'en': ['base'],
+  'sv': ['swedish'],
+  'sv-xl': ['swedish-xl'],
+  'sv-all': ['swedish', 'swedish-xl'],
+}
 
 const loading = ref(false)
 const error = ref('')
@@ -122,6 +139,7 @@ async function submit() {
   loading.value = true
 
   try {
+    localStorage.setItem('cah-pack', form.pack)
     const data = await $fetch<{ roomId: string }>('/api/games/cah/rooms', {
       method: 'POST',
       body: {
@@ -130,7 +148,7 @@ async function submit() {
           isPublic: form.isPublic,
           pointsToWin: form.pointsToWin,
           maxPlayers: form.maxPlayers,
-          packs: packForLanguage[form.language],
+          packs: packsForKey[form.pack],
         },
         bots: 0,
       },
@@ -222,6 +240,10 @@ async function submit() {
 .toggle-row {
   display: flex;
   gap: 8px;
+}
+.toggle-row--4 .toggle-btn {
+  font-size: 0.8rem;
+  padding: 9px 6px;
 }
 
 .toggle-btn {
