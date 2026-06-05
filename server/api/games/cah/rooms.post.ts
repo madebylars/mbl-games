@@ -18,7 +18,7 @@ export default defineEventHandler(async (event) => {
   }
 
   const bots = Math.min(Math.max(Number(body.bots ?? 0), 0), 4)
-  const state = createRoom(body.config ?? {}, bots)
+  const state = await createRoom(body.config ?? {}, bots)
 
   return { roomId: state.room.id }
 })

@@ -72,7 +72,7 @@ export function getPublicRooms() {
 
 // ── Room lifecycle ─────────────────────────────────────────────────────────────
 
-export function createRoom(config: Partial<RoomConfig>, botCount = 0): RoomState {
+export async function createRoom(config: Partial<RoomConfig>, botCount = 0): Promise<RoomState> {
   const roomId = genRoomId()
 
   const resolved: RoomConfig = {
@@ -87,7 +87,7 @@ export function createRoom(config: Partial<RoomConfig>, botCount = 0): RoomState
     packs:              config.packs              ?? ['base'],
   }
 
-  const cards = getCardsByPacks(resolved.packs)
+  const cards = await getCardsByPacks(resolved.packs)
 
   const state: RoomState = {
     room: {
